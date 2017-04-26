@@ -1,0 +1,24 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Aug 23 14:42:32 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "ja" LOCATE = SITE "V12" LEVEL 1;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "switch<0>" LOCATE = SITE "T10" LEVEL 1;
+COMP "switch<1>" LOCATE = SITE "T9" LEVEL 1;
+COMP "switch<2>" LOCATE = SITE "V9" LEVEL 1;
+COMP "switch<3>" LOCATE = SITE "M8" LEVEL 1;
+COMP "switch<4>" LOCATE = SITE "N8" LEVEL 1;
+COMP "switch<5>" LOCATE = SITE "U8" LEVEL 1;
+COMP "switch<6>" LOCATE = SITE "V8" LEVEL 1;
+COMP "switch<7>" LOCATE = SITE "T5" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "sw_unit/sw_reg" BEL "sw_unit/counter_0" BEL
+        "sw_unit/counter_1" BEL "sw_unit/counter_2" BEL "sw_unit/counter_3"
+        BEL "sw_unit/counter_4" BEL "sw_unit/counter_5" BEL
+        "sw_unit/counter_6" BEL "sw_unit/counter_7" BEL "sw_unit/counter_8"
+        BEL "sw_unit/counter_9" BEL "sw_unit/counter_10" BEL
+        "sw_unit/counter_11" BEL "clk_BUFGP/BUFG";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+SCHEMATIC END;
+

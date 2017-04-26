@@ -1,0 +1,3 @@
+verilog work "list_ch06_02_debounce.v"
+verilog work "list_ch04_20_fifo.v"
+verilog work "list_ch04_21_fifo_test.v"

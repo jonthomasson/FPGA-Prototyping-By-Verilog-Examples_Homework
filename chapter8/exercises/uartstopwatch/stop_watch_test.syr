@@ -1,0 +1,890 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Reading design: stop_watch_test.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "stop_watch_test.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "stop_watch_test"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : stop_watch_test
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter8\exercises\uartstopwatch\list_ch08_03_uart_tx.v" into library work
+Parsing module <uart_tx>.
+Analyzing Verilog file "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter8\exercises\uartstopwatch\list_ch08_01_uart_rx.v" into library work
+Parsing module <uart_rx>.
+Analyzing Verilog file "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter8\exercises\uartstopwatch\list_ch04_20_fifo.v" into library work
+Parsing module <fifo>.
+Analyzing Verilog file "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter8\exercises\uartstopwatch\list_ch04_11_mod_m_counter.v" into library work
+Parsing module <mod_m_counter>.
+Analyzing Verilog file "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter8\exercises\uartstopwatch\list_ch08_04_uart.v" into library work
+Parsing module <uart>.
+Analyzing Verilog file "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter8\exercises\uartstopwatch\list_ch06_02_debounce.v" into library work
+Parsing module <debounce>.
+Analyzing Verilog file "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter8\exercises\uartstopwatch\list_ch04_18_stop_watch_if.v" into library work
+Parsing module <stop_watch_if>.
+Analyzing Verilog file "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter8\exercises\uartstopwatch\list_ch04_15_disp_hex_mux.v" into library work
+Parsing module <disp_hex_mux>.
+Analyzing Verilog file "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter8\exercises\uartstopwatch\list_ch04_19_stop_watch_test.v" into library work
+Parsing module <stop_watch_test>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <stop_watch_test>.
+
+Elaborating module <disp_hex_mux>.
+WARNING:HDLCompiler:413 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter8\exercises\uartstopwatch\list_ch04_15_disp_hex_mux.v" Line 29: Result of 19-bit expression is truncated to fit in 18-bit target.
+
+Elaborating module <stop_watch_if>.
+WARNING:HDLCompiler:413 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter8\exercises\uartstopwatch\list_ch04_18_stop_watch_if.v" Line 29: Result of 32-bit expression is truncated to fit in 23-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter8\exercises\uartstopwatch\list_ch04_18_stop_watch_if.v" Line 48: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter8\exercises\uartstopwatch\list_ch04_18_stop_watch_if.v" Line 53: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter8\exercises\uartstopwatch\list_ch04_18_stop_watch_if.v" Line 58: Result of 5-bit expression is truncated to fit in 4-bit target.
+
+Elaborating module <uart>.
+
+Elaborating module <mod_m_counter(M=163,N=8)>.
+WARNING:HDLCompiler:413 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter8\exercises\uartstopwatch\list_ch04_11_mod_m_counter.v" Line 26: Result of 32-bit expression is truncated to fit in 8-bit target.
+
+Elaborating module <uart_rx(DBIT=8,SB_TICK=16)>.
+WARNING:HDLCompiler:413 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter8\exercises\uartstopwatch\list_ch08_01_uart_rx.v" Line 69: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter8\exercises\uartstopwatch\list_ch08_01_uart_rx.v" Line 79: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter8\exercises\uartstopwatch\list_ch08_01_uart_rx.v" Line 82: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter8\exercises\uartstopwatch\list_ch08_01_uart_rx.v" Line 91: Result of 5-bit expression is truncated to fit in 4-bit target.
+
+Elaborating module <fifo(B=8,W=2)>.
+WARNING:HDLCompiler:413 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter8\exercises\uartstopwatch\list_ch04_20_fifo.v" Line 54: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter8\exercises\uartstopwatch\list_ch04_20_fifo.v" Line 55: Result of 3-bit expression is truncated to fit in 2-bit target.
+
+Elaborating module <uart_tx(DBIT=8,SB_TICK=16)>.
+WARNING:HDLCompiler:413 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter8\exercises\uartstopwatch\list_ch08_03_uart_tx.v" Line 80: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter8\exercises\uartstopwatch\list_ch08_03_uart_tx.v" Line 93: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter8\exercises\uartstopwatch\list_ch08_03_uart_tx.v" Line 96: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter8\exercises\uartstopwatch\list_ch08_03_uart_tx.v" Line 108: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:189 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter8\exercises\uartstopwatch\list_ch04_19_stop_watch_test.v" Line 33: Size mismatch in connection of port <r_data>. Formal port size is 8-bit while actual signal size is 1-bit.
+
+Elaborating module <debounce>.
+WARNING:HDLCompiler:413 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter8\exercises\uartstopwatch\list_ch06_02_debounce.v" Line 58: Result of 32-bit expression is truncated to fit in 21-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter8\exercises\uartstopwatch\list_ch06_02_debounce.v" Line 82: Result of 32-bit expression is truncated to fit in 21-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter8\exercises\uartstopwatch\list_ch04_19_stop_watch_test.v" Line 42: Result of 2-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:295 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter8\exercises\uartstopwatch\list_ch04_19_stop_watch_test.v" Line 48: case condition never applies
+WARNING:HDLCompiler:295 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter8\exercises\uartstopwatch\list_ch04_19_stop_watch_test.v" Line 50: case condition never applies
+WARNING:HDLCompiler:552 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter8\exercises\uartstopwatch\list_ch04_19_stop_watch_test.v" Line 29: Input port w_data[7] is not connected on this instance
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <stop_watch_test>.
+    Related source file is "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter8\exercises\uartstopwatch\list_ch04_19_stop_watch_test.v".
+WARNING:Xst:2898 - Port 'w_data', unconnected in block instance 'uart_unit', is tied to GND.
+WARNING:Xst:647 - Input <btn<1:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter8\exercises\uartstopwatch\list_ch04_19_stop_watch_test.v" line 29: Output port <r_data> of the instance <uart_unit> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter8\exercises\uartstopwatch\list_ch04_19_stop_watch_test.v" line 29: Output port <tx_full> of the instance <uart_unit> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter8\exercises\uartstopwatch\list_ch04_19_stop_watch_test.v" line 29: Output port <rx_empty> of the instance <uart_unit> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter8\exercises\uartstopwatch\list_ch04_19_stop_watch_test.v" line 36: Output port <db_level> of the instance <btn_db_unit> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <master_clk>.
+    Found 1-bit adder for signal <master_clk_PWR_1_o_add_1_OUT<0>> created at line 42.
+    WARNING:Xst:2404 -  FFs/Latches <go<0:0>> (without init value) have a constant value of 0 in block <stop_watch_test>.
+    WARNING:Xst:2404 -  FFs/Latches <clear<0:0>> (without init value) have a constant value of 0 in block <stop_watch_test>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 D-type flip-flop(s).
+Unit <stop_watch_test> synthesized.
+
+Synthesizing Unit <disp_hex_mux>.
+    Related source file is "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter8\exercises\uartstopwatch\list_ch04_15_disp_hex_mux.v".
+    Found 18-bit register for signal <q_reg>.
+    Found 18-bit adder for signal <q_next> created at line 29.
+    Found 4x5-bit Read Only RAM for signal <_n0034>
+    Found 16x7-bit Read Only RAM for signal <_n0051[0:6]>
+    Found 1-bit 4-to-1 multiplexer for signal <hex_in<3>> created at line 64.
+    Found 1-bit 4-to-1 multiplexer for signal <hex_in<2>> created at line 64.
+    Found 1-bit 4-to-1 multiplexer for signal <hex_in<1>> created at line 64.
+    Found 1-bit 4-to-1 multiplexer for signal <hex_in<0>> created at line 64.
+    Summary:
+	inferred   2 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  18 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+Unit <disp_hex_mux> synthesized.
+
+Synthesizing Unit <stop_watch_if>.
+    Related source file is "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter8\exercises\uartstopwatch\list_ch04_18_stop_watch_if.v".
+    Found 4-bit register for signal <d2_reg>.
+    Found 4-bit register for signal <d1_reg>.
+    Found 4-bit register for signal <d0_reg>.
+    Found 23-bit register for signal <ms_reg>.
+    Found 24-bit adder for signal <n0066[23:0]> created at line 30.
+    Found 4-bit adder for signal <d0_reg[3]_GND_3_o_add_11_OUT> created at line 48.
+    Found 4-bit adder for signal <d1_reg[3]_GND_3_o_add_13_OUT> created at line 53.
+    Found 4-bit adder for signal <d2_reg[3]_GND_3_o_add_15_OUT> created at line 58.
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred  35 D-type flip-flop(s).
+Unit <stop_watch_if> synthesized.
+
+Synthesizing Unit <uart>.
+    Related source file is "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter8\exercises\uartstopwatch\list_ch08_04_uart.v".
+        DBIT = 8
+        SB_TICK = 16
+        DVSR = 163
+        DVSR_BIT = 8
+        FIFO_W = 2
+INFO:Xst:3210 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter8\exercises\uartstopwatch\list_ch08_04_uart.v" line 28: Output port <q> of the instance <baud_gen_unit> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter8\exercises\uartstopwatch\list_ch08_04_uart.v" line 35: Output port <full> of the instance <fifo_rx_unit> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <uart> synthesized.
+
+Synthesizing Unit <mod_m_counter>.
+    Related source file is "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter8\exercises\uartstopwatch\list_ch04_11_mod_m_counter.v".
+        N = 8
+        M = 163
+    Found 8-bit register for signal <r_reg>.
+    Found 9-bit adder for signal <n0013[8:0]> created at line 26.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <mod_m_counter> synthesized.
+
+Synthesizing Unit <uart_rx>.
+    Related source file is "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter8\exercises\uartstopwatch\list_ch08_01_uart_rx.v".
+        DBIT = 8
+        SB_TICK = 16
+    Found 4-bit register for signal <s_reg>.
+    Found 3-bit register for signal <n_reg>.
+    Found 8-bit register for signal <b_reg>.
+    Found 2-bit register for signal <state_reg>.
+    Found finite state machine <FSM_0> for signal <state_reg>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 2                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 3-bit adder for signal <n_reg[2]_GND_6_o_add_16_OUT> created at line 79.
+    Found 4-bit adder for signal <s_reg[3]_GND_6_o_add_29_OUT> created at line 91.
+    Found 4-bit 4-to-1 multiplexer for signal <s_next> created at line 53.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  15 D-type flip-flop(s).
+	inferred  11 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <uart_rx> synthesized.
+
+Synthesizing Unit <fifo>.
+    Related source file is "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter8\exercises\uartstopwatch\list_ch04_20_fifo.v".
+        B = 8
+        W = 2
+    Found 4x8-bit dual-port RAM <Mram_array_reg> for signal <array_reg>.
+    Found 1-bit register for signal <empty_reg>.
+    Found 2-bit register for signal <r_ptr_reg>.
+    Found 2-bit register for signal <w_ptr_reg>.
+    Found 1-bit register for signal <full_reg>.
+    Found 2-bit adder for signal <w_ptr_succ> created at line 54.
+    Found 2-bit adder for signal <r_ptr_succ> created at line 55.
+    Found 2-bit comparator not equal for signal <r_ptr_reg[1]_w_ptr_reg[1]_equal_8_o> created at line 68
+    Found 2-bit comparator not equal for signal <w_ptr_reg[1]_r_ptr_reg[1]_equal_10_o> created at line 76
+    Summary:
+	inferred   1 RAM(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   6 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <fifo> synthesized.
+
+Synthesizing Unit <uart_tx>.
+    Related source file is "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter8\exercises\uartstopwatch\list_ch08_03_uart_tx.v".
+        DBIT = 8
+        SB_TICK = 16
+    Found 1-bit register for signal <tx_reg>.
+    Found 4-bit register for signal <s_reg>.
+    Found 3-bit register for signal <n_reg>.
+    Found 8-bit register for signal <b_reg>.
+    Found 2-bit register for signal <state_reg>.
+    Found finite state machine <FSM_1> for signal <state_reg>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 2                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 3-bit adder for signal <n_reg[2]_GND_9_o_add_17_OUT> created at line 93.
+    Found 4-bit adder for signal <s_reg[3]_GND_9_o_add_30_OUT> created at line 108.
+    Found 4-bit 4-to-1 multiplexer for signal <s_next> created at line 58.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  16 D-type flip-flop(s).
+	inferred  10 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <uart_tx> synthesized.
+
+Synthesizing Unit <debounce>.
+    Related source file is "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter8\exercises\uartstopwatch\list_ch06_02_debounce.v".
+    Found 21-bit register for signal <q_reg>.
+    Found 2-bit register for signal <state_reg>.
+    Found finite state machine <FSM_2> for signal <state_reg>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 21-bit subtractor for signal <_n0040> created at line 59.
+    Found 21-bit 4-to-1 multiplexer for signal <q_next> created at line 43.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   7 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <debounce> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 4
+ 16x7-bit single-port Read Only RAM                    : 1
+ 4x5-bit single-port Read Only RAM                     : 1
+ 4x8-bit dual-port RAM                                 : 2
+# Adders/Subtractors                                   : 16
+ 1-bit adder                                           : 1
+ 18-bit adder                                          : 1
+ 2-bit adder                                           : 4
+ 21-bit subtractor                                     : 1
+ 24-bit adder                                          : 1
+ 3-bit adder                                           : 2
+ 4-bit adder                                           : 5
+ 9-bit adder                                           : 1
+# Registers                                            : 23
+ 1-bit register                                        : 6
+ 18-bit register                                       : 1
+ 2-bit register                                        : 4
+ 21-bit register                                       : 1
+ 23-bit register                                       : 1
+ 3-bit register                                        : 2
+ 4-bit register                                        : 5
+ 8-bit register                                        : 3
+# Comparators                                          : 4
+ 2-bit comparator not equal                            : 4
+# Multiplexers                                         : 33
+ 1-bit 2-to-1 multiplexer                              : 6
+ 1-bit 4-to-1 multiplexer                              : 4
+ 21-bit 2-to-1 multiplexer                             : 4
+ 21-bit 4-to-1 multiplexer                             : 1
+ 3-bit 2-to-1 multiplexer                              : 2
+ 32-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 12
+ 4-bit 4-to-1 multiplexer                              : 2
+ 8-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <uart_rx_unit> is unconnected in block <uart_unit>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fifo_rx_unit> is unconnected in block <uart_unit>.
+   It will be removed from the design.
+WARNING:Xst:1710 - FF/Latch <d0_reg_0> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <d1_reg_0> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <d2_reg_0> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ms_reg_22> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ms_reg_21> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ms_reg_20> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ms_reg_19> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ms_reg_18> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ms_reg_17> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ms_reg_16> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ms_reg_15> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ms_reg_14> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ms_reg_13> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ms_reg_12> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ms_reg_11> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ms_reg_10> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ms_reg_9> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ms_reg_8> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ms_reg_7> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ms_reg_6> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ms_reg_5> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ms_reg_4> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ms_reg_3> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ms_reg_2> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ms_reg_1> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ms_reg_0> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <d2_reg_1> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <d2_reg_2> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <d2_reg_3> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <d1_reg_1> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <d1_reg_2> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <d1_reg_3> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <d0_reg_1> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <d0_reg_2> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <d0_reg_3> (without init value) has a constant value of 0 in block <counter_unit>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <disp_hex_mux>.
+The following registers are absorbed into counter <q_reg>: 1 register on signal <q_reg>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0034> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 5-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <q_reg>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0051[0:6]> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <hex_in>        |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <disp_hex_mux> synthesized (advanced).
+
+Synthesizing (advanced) Unit <fifo>.
+The following registers are absorbed into counter <r_ptr_reg>: 1 register on signal <r_ptr_reg>.
+The following registers are absorbed into counter <w_ptr_reg>: 1 register on signal <w_ptr_reg>.
+INFO:Xst:3217 - HDL ADVISOR - Register <b_reg> currently described with an asynchronous reset, could be combined with distributed RAM <Mram_array_reg> for implementation on block RAM resources if you made this reset synchronous instead.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 8-bit                      |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <wr_en>         | high     |
+    |     addrA          | connected to signal <w_ptr_reg>     |          |
+    |     diA            | connected to signal <w_data>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 4-word x 8-bit                      |          |
+    |     addrB          | connected to signal <r_ptr_reg>     |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <fifo> synthesized (advanced).
+
+Synthesizing (advanced) Unit <stop_watch_if>.
+The following registers are absorbed into counter <d2_reg>: 1 register on signal <d2_reg>.
+The following registers are absorbed into counter <d1_reg>: 1 register on signal <d1_reg>.
+The following registers are absorbed into counter <d0_reg>: 1 register on signal <d0_reg>.
+The following registers are absorbed into counter <ms_reg>: 1 register on signal <ms_reg>.
+Unit <stop_watch_if> synthesized (advanced).
+
+Synthesizing (advanced) Unit <stop_watch_test>.
+The following registers are absorbed into counter <master_clk>: 1 register on signal <master_clk>.
+Unit <stop_watch_test> synthesized (advanced).
+
+Synthesizing (advanced) Unit <uart_rx>.
+The following registers are absorbed into counter <n_reg>: 1 register on signal <n_reg>.
+Unit <uart_rx> synthesized (advanced).
+
+Synthesizing (advanced) Unit <uart_tx>.
+The following registers are absorbed into counter <n_reg>: 1 register on signal <n_reg>.
+Unit <uart_tx> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 4
+ 16x7-bit single-port distributed Read Only RAM        : 1
+ 4x5-bit single-port distributed Read Only RAM         : 1
+ 4x8-bit dual-port distributed RAM                     : 2
+# Adders/Subtractors                                   : 8
+ 2-bit adder                                           : 4
+ 21-bit subtractor                                     : 1
+ 4-bit adder                                           : 2
+ 9-bit adder                                           : 1
+# Counters                                             : 12
+ 1-bit up counter                                      : 1
+ 18-bit up counter                                     : 1
+ 2-bit up counter                                      : 4
+ 23-bit up counter                                     : 1
+ 3-bit up counter                                      : 2
+ 4-bit up counter                                      : 3
+# Registers                                            : 58
+ Flip-Flops                                            : 58
+# Comparators                                          : 4
+ 2-bit comparator not equal                            : 4
+# Multiplexers                                         : 31
+ 1-bit 2-to-1 multiplexer                              : 6
+ 1-bit 4-to-1 multiplexer                              : 4
+ 21-bit 2-to-1 multiplexer                             : 4
+ 21-bit 4-to-1 multiplexer                             : 1
+ 32-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 12
+ 4-bit 4-to-1 multiplexer                              : 2
+ 8-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2973 - All outputs of instance <uart_unit/fifo_rx_unit> of block <fifo> are unconnected in block <stop_watch_test>. Underlying logic will be removed.
+WARNING:Xst:2973 - All outputs of instance <uart_unit/uart_rx_unit> of block <uart_rx> are unconnected in block <stop_watch_test>. Underlying logic will be removed.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <state_reg[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 11
+ 11    | 10
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <uart_unit/uart_tx_unit/FSM_1> on signal <state_reg[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 11
+ 11    | 10
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <btn_db_unit/FSM_2> on signal <state_reg[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 11    | 01
+ 10    | 11
+ 01    | 10
+-------------------
+WARNING:Xst:1710 - FF/Latch <ms_reg_6> (without init value) has a constant value of 0 in block <stop_watch_if>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ms_reg_7> (without init value) has a constant value of 0 in block <stop_watch_if>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ms_reg_8> (without init value) has a constant value of 0 in block <stop_watch_if>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ms_reg_9> (without init value) has a constant value of 0 in block <stop_watch_if>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ms_reg_10> (without init value) has a constant value of 0 in block <stop_watch_if>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ms_reg_11> (without init value) has a constant value of 0 in block <stop_watch_if>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ms_reg_12> (without init value) has a constant value of 0 in block <stop_watch_if>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ms_reg_13> (without init value) has a constant value of 0 in block <stop_watch_if>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ms_reg_14> (without init value) has a constant value of 0 in block <stop_watch_if>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ms_reg_15> (without init value) has a constant value of 0 in block <stop_watch_if>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ms_reg_16> (without init value) has a constant value of 0 in block <stop_watch_if>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ms_reg_17> (without init value) has a constant value of 0 in block <stop_watch_if>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ms_reg_18> (without init value) has a constant value of 0 in block <stop_watch_if>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ms_reg_19> (without init value) has a constant value of 0 in block <stop_watch_if>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ms_reg_20> (without init value) has a constant value of 0 in block <stop_watch_if>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ms_reg_21> (without init value) has a constant value of 0 in block <stop_watch_if>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ms_reg_22> (without init value) has a constant value of 0 in block <stop_watch_if>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d2_reg_1> (without init value) has a constant value of 0 in block <stop_watch_if>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d2_reg_0> (without init value) has a constant value of 0 in block <stop_watch_if>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d2_reg_2> (without init value) has a constant value of 0 in block <stop_watch_if>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d2_reg_3> (without init value) has a constant value of 0 in block <stop_watch_if>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d1_reg_0> (without init value) has a constant value of 0 in block <stop_watch_if>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d1_reg_1> (without init value) has a constant value of 0 in block <stop_watch_if>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d1_reg_2> (without init value) has a constant value of 0 in block <stop_watch_if>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d1_reg_3> (without init value) has a constant value of 0 in block <stop_watch_if>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d0_reg_0> (without init value) has a constant value of 0 in block <stop_watch_if>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d0_reg_1> (without init value) has a constant value of 0 in block <stop_watch_if>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d0_reg_2> (without init value) has a constant value of 0 in block <stop_watch_if>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d0_reg_3> (without init value) has a constant value of 0 in block <stop_watch_if>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ms_reg_0> (without init value) has a constant value of 0 in block <stop_watch_if>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ms_reg_1> (without init value) has a constant value of 0 in block <stop_watch_if>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ms_reg_2> (without init value) has a constant value of 0 in block <stop_watch_if>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ms_reg_3> (without init value) has a constant value of 0 in block <stop_watch_if>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ms_reg_4> (without init value) has a constant value of 0 in block <stop_watch_if>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ms_reg_5> (without init value) has a constant value of 0 in block <stop_watch_if>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <stop_watch_test> ...
+
+Optimizing unit <mod_m_counter> ...
+
+Optimizing unit <uart_rx> ...
+
+Optimizing unit <fifo> ...
+
+Optimizing unit <uart_tx> ...
+
+Optimizing unit <debounce> ...
+INFO:Xst:2399 - RAMs <uart_unit/fifo_tx_unit/Mram_array_reg22>, <uart_unit/fifo_tx_unit/Mram_array_reg21> are equivalent, second RAM is removed
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block stop_watch_test, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 74
+ Flip-Flops                                            : 74
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : stop_watch_test.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 213
+#      GND                         : 1
+#      INV                         : 22
+#      LUT1                        : 18
+#      LUT2                        : 9
+#      LUT3                        : 15
+#      LUT4                        : 11
+#      LUT5                        : 30
+#      LUT6                        : 29
+#      MUXCY                       : 37
+#      MUXF7                       : 1
+#      VCC                         : 1
+#      XORCY                       : 39
+# FlipFlops/Latches                : 74
+#      FD                          : 19
+#      FDC                         : 40
+#      FDCE                        : 13
+#      FDP                         : 2
+# RAMS                             : 2
+#      RAM16X1D                    : 1
+#      RAM32M                      : 1
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 15
+#      IBUF                        : 2
+#      OBUF                        : 13
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              74  out of  18224     0%  
+ Number of Slice LUTs:                  140  out of   9112     1%  
+    Number used as Logic:               134  out of   9112     1%  
+    Number used as Memory:                6  out of   2176     0%  
+       Number used as RAM:                6
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    141
+   Number with an unused Flip Flop:      67  out of    141    47%  
+   Number with an unused LUT:             1  out of    141     0%  
+   Number of fully used LUT-FF pairs:    73  out of    141    51%  
+   Number of unique control sets:         6
+
+IO Utilization: 
+ Number of IOs:                          18
+ Number of bonded IOBs:                  16  out of    232     6%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 1     |
+master_clk                         | BUFG                   | 75    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.955ns (Maximum Frequency: 201.800MHz)
+   Minimum input arrival time before clock: 4.954ns
+   Maximum output required time after clock: 4.656ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 1.913ns (frequency: 522.821MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.913ns (Levels of Logic = 1)
+  Source:            master_clk (FF)
+  Destination:       master_clk (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: master_clk to master_clk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.447   0.579  master_clk (master_clk)
+     INV:I->O              1   0.206   0.579  Mcount_master_clk_xor<0>11_INV_0 (Result)
+     FD:D                      0.102          master_clk
+    ----------------------------------------
+    Total                      1.913ns (0.755ns logic, 1.158ns route)
+                                       (39.5% logic, 60.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'master_clk'
+  Clock period: 4.955ns (frequency: 201.800MHz)
+  Total number of paths / destination ports: 3126 / 93
+-------------------------------------------------------------------------
+Delay:               4.955ns (Levels of Logic = 7)
+  Source:            btn_db_unit/q_reg_0 (FF)
+  Destination:       uart_unit/fifo_tx_unit/empty_reg (FF)
+  Source Clock:      master_clk rising
+  Destination Clock: master_clk rising
+
+  Data Path: btn_db_unit/q_reg_0 to uart_unit/fifo_tx_unit/empty_reg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.447   0.617  btn_db_unit/q_reg_0 (btn_db_unit/q_reg_0)
+     LUT1:I0->O            1   0.205   0.000  btn_db_unit/Msub__n0040_cy<0>_rt (btn_db_unit/Msub__n0040_cy<0>_rt)
+     MUXCY:S->O            1   0.172   0.000  btn_db_unit/Msub__n0040_cy<0> (btn_db_unit/Msub__n0040_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  btn_db_unit/Msub__n0040_cy<1> (btn_db_unit/Msub__n0040_cy<1>)
+     XORCY:CI->O           2   0.180   0.981  btn_db_unit/Msub__n0040_xor<2> (btn_db_unit/_n0040<18>)
+     LUT6:I0->O            7   0.203   1.002  btn_db_unit/db_tick22 (btn_db_unit/db_tick21)
+     LUT6:I3->O            2   0.205   0.617  btn_db_unit/db_tick25 (btn_db_unit/db_tick_bdd2)
+     LUT6:I5->O            1   0.205   0.000  uart_unit/fifo_tx_unit/full_reg_rstpot (uart_unit/fifo_tx_unit/full_reg_rstpot)
+     FDC:D                     0.102          uart_unit/fifo_tx_unit/full_reg
+    ----------------------------------------
+    Total                      4.955ns (1.738ns logic, 3.217ns route)
+                                       (35.1% logic, 64.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'master_clk'
+  Total number of paths / destination ports: 88 / 86
+-------------------------------------------------------------------------
+Offset:              4.954ns (Levels of Logic = 5)
+  Source:            btn<0> (PAD)
+  Destination:       uart_unit/fifo_tx_unit/r_ptr_reg_1 (FF)
+  Destination Clock: master_clk rising
+
+  Data Path: btn<0> to uart_unit/fifo_tx_unit/r_ptr_reg_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            32   1.222   1.396  btn_0_IBUF (btn_0_IBUF)
+     LUT2:I0->O            1   0.203   0.684  uart_unit/fifo_tx_unit/_n0071_inv1_rstpot_SW0 (N24)
+     LUT6:I4->O            1   0.203   0.000  btn_db_unit/db_tick25_SW5_F (N55)
+     MUXF7:I0->O           1   0.131   0.808  btn_db_unit/db_tick25_SW5 (N46)
+     LUT6:I3->O            1   0.205   0.000  uart_unit/fifo_tx_unit/r_ptr_reg_1_dpot (uart_unit/fifo_tx_unit/r_ptr_reg_1_dpot)
+     FDCE:D                    0.102          uart_unit/fifo_tx_unit/r_ptr_reg_1
+    ----------------------------------------
+    Total                      4.954ns (2.066ns logic, 2.888ns route)
+                                       (41.7% logic, 58.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'master_clk'
+  Total number of paths / destination ports: 11 / 6
+-------------------------------------------------------------------------
+Offset:              4.656ns (Levels of Logic = 2)
+  Source:            disp_unit/q_reg_16 (FF)
+  Destination:       an<1> (PAD)
+  Source Clock:      master_clk rising
+
+  Data Path: disp_unit/q_reg_16 to an<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               5   0.447   0.819  disp_unit/q_reg_16 (disp_unit/q_reg_16)
+     LUT2:I0->O            2   0.203   0.616  sseg<7>1 (sseg_7_OBUF)
+     OBUF:I->O                 2.571          an_1_OBUF (an<1>)
+    ----------------------------------------
+    Total                      4.656ns (3.221ns logic, 1.435ns route)
+                                       (69.2% logic, 30.8% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    1.913|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock master_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+master_clk     |    4.955|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 11.37 secs
+ 
+--> 
+
+Total memory usage is 230056 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  101 (   0 filtered)
+Number of infos    :   10 (   0 filtered)
+

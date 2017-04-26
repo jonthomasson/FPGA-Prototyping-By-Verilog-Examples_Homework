@@ -1,0 +1,37 @@
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter6/exercises/debounce/debounce_fsmd_test.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter6/exercises/debounce/debounce_fsmd_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "debounce_fsmd_test.ngc" debounce_fsmd_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o debounce_fsmd_test_map.ncd debounce_fsmd_test.ngd debounce_fsmd_test.pcf 
+par -w -intstyle ise -ol high -mt off debounce_fsmd_test_map.ncd debounce_fsmd_test.ncd debounce_fsmd_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml debounce_fsmd_test.twx debounce_fsmd_test.ncd -o debounce_fsmd_test.twr debounce_fsmd_test.pcf -ucf Nexys3_master.ucf 
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter6/exercises/debounce/debounce_fsmd_test.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter6/exercises/debounce/debounce_fsmd_test.syr" 
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter6/exercises/debounce/debounce_fsmd_test.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter6/exercises/debounce/debounce_fsmd_test.syr" 
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter6/exercises/debounce/debounce_fsmd_test.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter6/exercises/debounce/debounce_fsmd_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "debounce_fsmd_test.ngc" debounce_fsmd_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o debounce_fsmd_test_map.ncd debounce_fsmd_test.ngd debounce_fsmd_test.pcf 
+par -w -intstyle ise -ol high -mt off debounce_fsmd_test_map.ncd debounce_fsmd_test.ncd debounce_fsmd_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml debounce_fsmd_test.twx debounce_fsmd_test.ncd -o debounce_fsmd_test.twr debounce_fsmd_test.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f debounce_fsmd_test.ut debounce_fsmd_test.ncd 
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter6/exercises/debounce/debounce_fsmd_test.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter6/exercises/debounce/debounce_fsmd_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "debounce_fsmd_test.ngc" debounce_fsmd_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o debounce_fsmd_test_map.ncd debounce_fsmd_test.ngd debounce_fsmd_test.pcf 
+par -w -intstyle ise -ol high -mt off debounce_fsmd_test_map.ncd debounce_fsmd_test.ncd debounce_fsmd_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml debounce_fsmd_test.twx debounce_fsmd_test.ncd -o debounce_fsmd_test.twr debounce_fsmd_test.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f debounce_fsmd_test.ut debounce_fsmd_test.ncd 
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter6/exercises/debounce/debounce_fsmd_test.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter6/exercises/debounce/debounce_fsmd_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "debounce_fsmd_test.ngc" debounce_fsmd_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o debounce_fsmd_test_map.ncd debounce_fsmd_test.ngd debounce_fsmd_test.pcf 
+par -w -intstyle ise -ol high -mt off debounce_fsmd_test_map.ncd debounce_fsmd_test.ncd debounce_fsmd_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml debounce_fsmd_test.twx debounce_fsmd_test.ncd -o debounce_fsmd_test.twr debounce_fsmd_test.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f debounce_fsmd_test.ut debounce_fsmd_test.ncd 
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter6/exercises/debounce/debounce_fsmd_test.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter6/exercises/debounce/debounce_fsmd_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "debounce_fsmd_test.ngc" debounce_fsmd_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o debounce_fsmd_test_map.ncd debounce_fsmd_test.ngd debounce_fsmd_test.pcf 
+par -w -intstyle ise -ol high -mt off debounce_fsmd_test_map.ncd debounce_fsmd_test.ncd debounce_fsmd_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml debounce_fsmd_test.twx debounce_fsmd_test.ncd -o debounce_fsmd_test.twr debounce_fsmd_test.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f debounce_fsmd_test.ut debounce_fsmd_test.ncd 
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter6/exercises/debounce/debounce_fsmd_test.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter6/exercises/debounce/debounce_fsmd_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "debounce_fsmd_test.ngc" debounce_fsmd_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o debounce_fsmd_test_map.ncd debounce_fsmd_test.ngd debounce_fsmd_test.pcf 
+par -w -intstyle ise -ol high -mt off debounce_fsmd_test_map.ncd debounce_fsmd_test.ncd debounce_fsmd_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml debounce_fsmd_test.twx debounce_fsmd_test.ncd -o debounce_fsmd_test.twr debounce_fsmd_test.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f debounce_fsmd_test.ut debounce_fsmd_test.ncd 

@@ -1,0 +1,4 @@
+verilog work "list_ch03_21_fp_adder.v"
+verilog work "list_ch03_14_hex_to_sseg.v"
+verilog work "disp_mux.v"
+verilog work "list_ch03_22_fp_adder_test.v"

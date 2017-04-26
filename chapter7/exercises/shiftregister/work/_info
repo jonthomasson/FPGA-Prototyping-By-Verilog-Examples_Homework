@@ -1,0 +1,43 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Stache\Documents\Xilinx Projects\learning\chapter6\exercises\bcdtobinary
+vshiftregister
+Z1 !s100 ;XMfaUY7?dcg2c=0Pbj9L0
+Z2 IaX5kc]A507bdoc=g4Uc]M2
+Z3 VcEf0`?6L`I?0HeBG?f6YK3
+Z4 dC:\Users\Stache\Documents\Xilinx Projects\learning\chapter7\exercises\shiftregister
+Z5 w1473782358
+Z6 8C:/Users/Stache/Documents/Xilinx Projects/learning/chapter7/exercises/shiftregister/shiftregister.v
+Z7 FC:/Users/Stache/Documents/Xilinx Projects/learning/chapter7/exercises/shiftregister/shiftregister.v
+L0 21
+Z8 OV;L;10.1e;51
+r1
+31
+Z9 !s90 -reportprogress|300|-work|work|C:/Users/Stache/Documents/Xilinx Projects/learning/chapter7/exercises/shiftregister/shiftregister.v|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1473783010.709000
+Z12 !s107 C:/Users/Stache/Documents/Xilinx Projects/learning/chapter7/exercises/shiftregister/shiftregister.v|
+!s101 -O0
+vshiftregister_test
+!i10b 1
+!s100 oTo1JCF?^bSz<W;KBDR5<2
+I2KN<O5LbI`5bV:DHzKEoz2
+Z13 V3a9;2l8i6gzB^Ak_RPBcX1
+R4
+w1473782996
+Z14 8C:/Users/Stache/Documents/Xilinx Projects/learning/chapter7/exercises/shiftregister/shiftregister_test.v
+Z15 FC:/Users/Stache/Documents/Xilinx Projects/learning/chapter7/exercises/shiftregister/shiftregister_test.v
+L0 25
+R8
+r1
+!s85 0
+31
+!s108 1473783010.865000
+!s107 C:/Users/Stache/Documents/Xilinx Projects/learning/chapter7/exercises/shiftregister/shiftregister_test.v|
+Z16 !s90 -reportprogress|300|-work|work|C:/Users/Stache/Documents/Xilinx Projects/learning/chapter7/exercises/shiftregister/shiftregister_test.v|
+!s101 -O0
+R10

@@ -1,0 +1,60 @@
+Autosize
+
+s
+Compressed
+
+s
+Direction
+
+s
+File Format
+
+s
+Fill Value
+
+s
+Flash Data Width
+
+s
+Flash Topology
+
+s
+Multiboot
+
+s
+Multiboot Bpi Chain
+
+s
+Multiboot Bpi Device
+
+s
+Multiboot Bpi Type
+
+s
+Number of Designs
+0
+i32
+Number of Prom Devices
+0
+i32
+PFFName
+
+s
+PFFPath
+
+s
+PFFSize
+
+s
+RSPin Msb
+
+s
+SPI Selected
+
+s
+Submode
+LEGACY
+s
+Swap Bit
+
+s

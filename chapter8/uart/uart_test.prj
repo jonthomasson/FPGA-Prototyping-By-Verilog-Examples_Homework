@@ -1,0 +1,7 @@
+verilog work "list_ch08_03_uart_tx.v"
+verilog work "list_ch08_01_uart_rx.v"
+verilog work "list_ch04_20_fifo.v"
+verilog work "list_ch04_11_mod_m_counter.v"
+verilog work "list_ch08_04_uart.v"
+verilog work "list_ch06_02_debounce.v"
+verilog work "list_ch08_05_uart_test.v"

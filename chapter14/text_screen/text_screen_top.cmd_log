@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter14/text_screen/text_screen_top.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter14/text_screen/text_screen_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "text_screen_top.ngc" text_screen_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o text_screen_top_map.ncd text_screen_top.ngd text_screen_top.pcf 
+par -w -intstyle ise -ol high -mt off text_screen_top_map.ncd text_screen_top.ncd text_screen_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml text_screen_top.twx text_screen_top.ncd -o text_screen_top.twr text_screen_top.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f text_screen_top.ut text_screen_top.ncd 
+bitgen -intstyle ise -f text_screen_top.ut text_screen_top.ncd 

@@ -1,0 +1,53 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Aug 23 22:24:53 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "an<0>" LOCATE = SITE "N16" LEVEL 1;
+COMP "an<1>" LOCATE = SITE "N15" LEVEL 1;
+COMP "an<2>" LOCATE = SITE "P18" LEVEL 1;
+COMP "an<3>" LOCATE = SITE "P17" LEVEL 1;
+COMP "btn<0>" LOCATE = SITE "B8" LEVEL 1;
+COMP "btn<1>" LOCATE = SITE "A8" LEVEL 1;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "sseg<0>" LOCATE = SITE "T17" LEVEL 1;
+COMP "sseg<1>" LOCATE = SITE "T18" LEVEL 1;
+COMP "sseg<2>" LOCATE = SITE "U17" LEVEL 1;
+COMP "sseg<3>" LOCATE = SITE "U18" LEVEL 1;
+COMP "sseg<4>" LOCATE = SITE "M14" LEVEL 1;
+COMP "sseg<5>" LOCATE = SITE "N14" LEVEL 1;
+COMP "sseg<6>" LOCATE = SITE "L14" LEVEL 1;
+COMP "sseg<7>" LOCATE = SITE "M13" LEVEL 1;
+COMP "sw<0>" LOCATE = SITE "T10" LEVEL 1;
+COMP "sw<1>" LOCATE = SITE "T9" LEVEL 1;
+COMP "sw<2>" LOCATE = SITE "V9" LEVEL 1;
+COMP "sw<3>" LOCATE = SITE "M8" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "disp_unit/q_reg_17" BEL "disp_unit/q_reg_16" BEL
+        "disp_unit/q_reg_15" BEL "disp_unit/q_reg_14" BEL "disp_unit/q_reg_13"
+        BEL "disp_unit/q_reg_12" BEL "disp_unit/q_reg_11" BEL
+        "disp_unit/q_reg_10" BEL "disp_unit/q_reg_9" BEL "disp_unit/q_reg_8"
+        BEL "disp_unit/q_reg_7" BEL "disp_unit/q_reg_6" BEL
+        "disp_unit/q_reg_5" BEL "disp_unit/q_reg_4" BEL "disp_unit/q_reg_3"
+        BEL "disp_unit/q_reg_2" BEL "disp_unit/q_reg_1" BEL
+        "disp_unit/q_reg_0" BEL "counter_unit/ms_reg_22" BEL
+        "counter_unit/ms_reg_21" BEL "counter_unit/ms_reg_20" BEL
+        "counter_unit/ms_reg_19" BEL "counter_unit/ms_reg_18" BEL
+        "counter_unit/ms_reg_17" BEL "counter_unit/ms_reg_16" BEL
+        "counter_unit/ms_reg_15" BEL "counter_unit/ms_reg_14" BEL
+        "counter_unit/ms_reg_13" BEL "counter_unit/ms_reg_12" BEL
+        "counter_unit/ms_reg_11" BEL "counter_unit/ms_reg_10" BEL
+        "counter_unit/ms_reg_9" BEL "counter_unit/ms_reg_8" BEL
+        "counter_unit/ms_reg_7" BEL "counter_unit/ms_reg_6" BEL
+        "counter_unit/ms_reg_5" BEL "counter_unit/ms_reg_4" BEL
+        "counter_unit/ms_reg_3" BEL "counter_unit/ms_reg_2" BEL
+        "counter_unit/ms_reg_1" BEL "counter_unit/ms_reg_0" BEL
+        "counter_unit/d1_reg_3" BEL "counter_unit/d1_reg_2" BEL
+        "counter_unit/d1_reg_1" BEL "counter_unit/d1_reg_0" BEL
+        "counter_unit/d2_reg_3" BEL "counter_unit/d2_reg_2" BEL
+        "counter_unit/d2_reg_0" BEL "counter_unit/d2_reg_1" BEL
+        "counter_unit/d0_reg_3" BEL "counter_unit/d0_reg_2" BEL
+        "counter_unit/d0_reg_1" BEL "counter_unit/d0_reg_0" BEL
+        "clk_BUFGP/BUFG";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+SCHEMATIC END;
+

@@ -1,0 +1,16 @@
+Release 14.7 - WebTalk (P.20131013)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Project Information
+--------------------
+ProjectID=A2B58C9EE06149B4A45AC0DD591E1C80
+ProjectIteration=2
+
+WebTalk Summary
+----------------
+INFO:WebTalk:1 - WebTalk is enabled because you are using a WebPACK license.
+
+INFO:WebTalk:8 - WebTalk Install setting is ON.
+INFO:WebTalk:7 - WebTalk User setting is OFF.
+
+INFO:WebTalk:4 - C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/hex_mux/usage_statistics_webtalk.html WebTalk report has been successfully sent to Xilinx on 2016-08-19T14:31:31.  For additional details about this file, please refer to the WebTalk help file at C:/Users/Stache/Documents/Xilinx/14.7/ISE_DS/ISE/data/reports/webtalk_introduction.html

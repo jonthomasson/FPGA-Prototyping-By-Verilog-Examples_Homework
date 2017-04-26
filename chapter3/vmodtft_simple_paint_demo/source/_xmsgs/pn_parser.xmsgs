@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated   -->
+<!--     by the Xilinx ISE software.  Any direct editing or        -->
+<!--     changes made to this file may result in unpredictable     -->
+<!--     behavior or data corruption.  It is strongly advised that -->
+<!--     users do not edit the contents of this file.              -->
+<!--                                                               -->
+<!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
+
+<messages>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Stache/Documents/Xilinx Projects/learning/chapter3/vmodtft_simple_paint_demo/source/SysCon.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Stache/Documents/Xilinx Projects/learning/chapter3/vmodtft_simple_paint_demo/source/TFTCtl.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Stache/Documents/Xilinx Projects/learning/chapter3/vmodtft_simple_paint_demo/source/TouchCtrl.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Stache/Documents/Xilinx Projects/learning/chapter3/vmodtft_simple_paint_demo/source/VmodTFT_SimplePaint_Nexys3.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Stache/Documents/Xilinx Projects/learning/chapter3/vmodtft_simple_paint_demo/source/remote_sources/_/lib/digilent/InputSync.vhd&quot; into library digilent</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Stache/Documents/Xilinx Projects/learning/chapter3/vmodtft_simple_paint_demo/source/remote_sources/_/lib/digilent/LocalRst.vhd&quot; into library digilent</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Stache/Documents/Xilinx Projects/learning/chapter3/vmodtft_simple_paint_demo/source/remote_sources/_/lib/digilent/PWM.vhd&quot; into library digilent</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Stache/Documents/Xilinx Projects/learning/chapter3/vmodtft_simple_paint_demo/source/remote_sources/_/lib/digilent/SSegDisp.vhd&quot; into library digilent</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Stache/Documents/Xilinx Projects/learning/chapter3/vmodtft_simple_paint_demo/source/remote_sources/_/lib/digilent/Touch.vhd&quot; into library digilent</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Stache/Documents/Xilinx Projects/learning/chapter3/vmodtft_simple_paint_demo/source/remote_sources/_/lib/digilent/Video.vhd&quot; into library digilent</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Stache/Documents/Xilinx Projects/learning/chapter3/vmodtft_simple_paint_demo/source/remote_sources/_/lib/digilent/VideoTimingCtl.vhd&quot; into library digilent</arg>
+</msg>
+
+</messages>
+

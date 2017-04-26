@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter3/barrelshifter/shifter_test.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter3/barrelshifter/shifter_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "shifter_test.ngc" shifter_test.ngd  
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter3/barrelshifter/shifter_test.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter3/barrelshifter/shifter_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "shifter_test.ngc" shifter_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o shifter_test_map.ncd shifter_test.ngd shifter_test.pcf 
+par -w -intstyle ise -ol high -mt off shifter_test_map.ncd shifter_test.ncd shifter_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml shifter_test.twx shifter_test.ncd -o shifter_test.twr shifter_test.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f shifter_test.ut shifter_test.ncd 

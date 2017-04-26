@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter13/pongstill/pong_top_st.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter13/pongstill/pong_top_st.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "pong_top_st.ngc" pong_top_st.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o pong_top_st_map.ncd pong_top_st.ngd pong_top_st.pcf 
+par -w -intstyle ise -ol high -mt off pong_top_st_map.ncd pong_top_st.ncd pong_top_st.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml pong_top_st.twx pong_top_st.ncd -o pong_top_st.twr pong_top_st.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f pong_top_st.ut pong_top_st.ncd 

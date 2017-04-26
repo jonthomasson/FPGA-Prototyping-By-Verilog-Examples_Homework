@@ -1,0 +1,15 @@
+{C:/Users/Stache/Documents/Xilinx Projects/learning/chapter7/exercises/shiftregister/shiftregister_test.v} {1 {vlog -work work {C:/Users/Stache/Documents/Xilinx Projects/learning/chapter7/exercises/shiftregister/shiftregister_test.v}
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module shiftregister_test
+
+Top level modules:
+	shiftregister_test
+
+} {} {}} {C:/Users/Stache/Documents/Xilinx Projects/learning/chapter7/exercises/shiftregister/shiftregister.v} {1 {vlog -work work {C:/Users/Stache/Documents/Xilinx Projects/learning/chapter7/exercises/shiftregister/shiftregister.v}
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module shiftregister
+
+Top level modules:
+	shiftregister
+
+} {} {}}

@@ -1,0 +1,470 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Reading design: sm_add_test.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "sm_add_test.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "sm_add_test"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : sm_add_test
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter3\signmagnitudeadder\list_ch03_16_sign_mag_addt.v" into library work
+Parsing module <sign_mag_add>.
+Analyzing Verilog file "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter3\signmagnitudeadder\hex_to_sseg.v" into library work
+Parsing module <hex_to_sseg>.
+Analyzing Verilog file "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter3\signmagnitudeadder\disp_mux.v" into library work
+Parsing module <disp_mux>.
+Analyzing Verilog file "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter3\signmagnitudeadder\list_ch03_17_sm_add_test.v" into library work
+Parsing module <sm_add_test>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <sm_add_test>.
+
+Elaborating module <sign_mag_add(N=4)>.
+
+Elaborating module <hex_to_sseg>.
+
+Elaborating module <disp_mux>.
+WARNING:HDLCompiler:413 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter3\signmagnitudeadder\disp_mux.v" Line 27: Result of 19-bit expression is truncated to fit in 18-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <sm_add_test>.
+    Related source file is "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter3\signmagnitudeadder\list_ch03_17_sm_add_test.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <sm_add_test> synthesized.
+
+Synthesizing Unit <sign_mag_add>.
+    Related source file is "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter3\signmagnitudeadder\list_ch03_16_sign_mag_addt.v".
+        N = 4
+    Found 3-bit subtractor for signal <b[2]_a[2]_sub_6_OUT> created at line 40.
+    Found 3-bit adder for signal <b[2]_a[2]_add_4_OUT> created at line 38.
+    Found 3-bit comparator greater for signal <b[2]_a[2]_LessThan_1_o> created at line 24
+    Found 1-bit comparator equal for signal <a[3]_b[3]_equal_4_o> created at line 37
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred   3 Multiplexer(s).
+Unit <sign_mag_add> synthesized.
+
+Synthesizing Unit <hex_to_sseg>.
+    Related source file is "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter3\signmagnitudeadder\hex_to_sseg.v".
+    Found 16x7-bit Read Only RAM for signal <_n0026[0:6]>
+    Summary:
+	inferred   1 RAM(s).
+Unit <hex_to_sseg> synthesized.
+
+Synthesizing Unit <disp_mux>.
+    Related source file is "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter3\signmagnitudeadder\disp_mux.v".
+    Found 18-bit register for signal <q_reg>.
+    Found 18-bit adder for signal <q_next> created at line 27.
+    Found 4x4-bit Read Only RAM for signal <an>
+    Found 8-bit 3-to-1 multiplexer for signal <seg> created at line 32.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  18 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <disp_mux> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x7-bit single-port Read Only RAM                    : 1
+ 4x4-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 2
+ 18-bit adder                                          : 1
+ 3-bit addsub                                          : 1
+# Registers                                            : 1
+ 18-bit register                                       : 1
+# Comparators                                          : 2
+ 1-bit comparator equal                                : 1
+ 3-bit comparator greater                              : 1
+# Multiplexers                                         : 5
+ 1-bit 2-to-1 multiplexer                              : 1
+ 3-bit 2-to-1 multiplexer                              : 2
+ 4-bit 2-to-1 multiplexer                              : 1
+ 8-bit 3-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <disp_mux>.
+The following registers are absorbed into counter <q_reg>: 1 register on signal <q_reg>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_an> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <q_reg>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <an>            |          |
+    -----------------------------------------------------------------------
+Unit <disp_mux> synthesized (advanced).
+
+Synthesizing (advanced) Unit <hex_to_sseg>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0026[0:6]> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <hex>           |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <hex_to_sseg> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x7-bit single-port distributed Read Only RAM        : 1
+ 4x4-bit single-port distributed Read Only RAM         : 1
+# Adders/Subtractors                                   : 1
+ 3-bit addsub                                          : 1
+# Counters                                             : 1
+ 18-bit up counter                                     : 1
+# Comparators                                          : 2
+ 1-bit comparator equal                                : 1
+ 3-bit comparator greater                              : 1
+# Multiplexers                                         : 5
+ 1-bit 2-to-1 multiplexer                              : 1
+ 3-bit 2-to-1 multiplexer                              : 2
+ 4-bit 2-to-1 multiplexer                              : 1
+ 8-bit 3-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <sm_add_test> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block sm_add_test, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 18
+ Flip-Flops                                            : 18
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : sm_add_test.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 75
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 17
+#      LUT2                        : 5
+#      LUT4                        : 2
+#      LUT5                        : 9
+#      LUT6                        : 4
+#      MUXCY                       : 17
+#      VCC                         : 1
+#      XORCY                       : 18
+# FlipFlops/Latches                : 18
+#      FD                          : 18
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 22
+#      IBUF                        : 10
+#      OBUF                        : 12
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              18  out of  18224     0%  
+ Number of Slice LUTs:                   38  out of   9112     0%  
+    Number used as Logic:                38  out of   9112     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     38
+   Number with an unused Flip Flop:      20  out of     38    52%  
+   Number with an unused LUT:             0  out of     38     0%  
+   Number of fully used LUT-FF pairs:    18  out of     38    47%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                          23
+ Number of bonded IOBs:                  23  out of    232     9%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 18    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 2.015ns (Maximum Frequency: 496.327MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 5.053ns
+   Maximum combinational path delay: 9.374ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.015ns (frequency: 496.327MHz)
+  Total number of paths / destination ports: 171 / 18
+-------------------------------------------------------------------------
+Delay:               2.015ns (Levels of Logic = 3)
+  Source:            disp_unit/q_reg_16 (FF)
+  Destination:       disp_unit/q_reg_17 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: disp_unit/q_reg_16 to disp_unit/q_reg_17
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              12   0.447   0.909  disp_unit/q_reg_16 (disp_unit/q_reg_16)
+     LUT1:I0->O            1   0.205   0.000  disp_unit/Mcount_q_reg_cy<16>_rt (disp_unit/Mcount_q_reg_cy<16>_rt)
+     MUXCY:S->O            0   0.172   0.000  disp_unit/Mcount_q_reg_cy<16> (disp_unit/Mcount_q_reg_cy<16>)
+     XORCY:CI->O           1   0.180   0.000  disp_unit/Mcount_q_reg_xor<17> (Result<17>)
+     FD:D                      0.102          disp_unit/q_reg_17
+    ----------------------------------------
+    Total                      2.015ns (1.106ns logic, 0.909ns route)
+                                       (54.9% logic, 45.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 24 / 12
+-------------------------------------------------------------------------
+Offset:              5.053ns (Levels of Logic = 2)
+  Source:            disp_unit/q_reg_16 (FF)
+  Destination:       seg<0> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: disp_unit/q_reg_16 to seg<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              12   0.447   1.253  disp_unit/q_reg_16 (disp_unit/q_reg_16)
+     LUT6:I1->O            1   0.203   0.579  disp_unit/Mmux_seg1 (seg_0_OBUF)
+     OBUF:I->O                 2.571          seg_0_OBUF (seg<0>)
+    ----------------------------------------
+    Total                      5.053ns (3.221ns logic, 1.832ns route)
+                                       (63.7% logic, 36.3% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 346 / 7
+-------------------------------------------------------------------------
+Delay:               9.374ns (Levels of Logic = 7)
+  Source:            sw<2> (PAD)
+  Destination:       seg<2> (PAD)
+
+  Data Path: sw<2> to seg<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.222   1.015  sw_2_IBUF (sw_2_IBUF)
+     LUT6:I0->O            3   0.203   0.651  sm_adder_unit/b[2]_a[2]_LessThan_1_o1 (sm_adder_unit/b[2]_a[2]_LessThan_1_o)
+     LUT5:I4->O            2   0.205   0.617  sm_adder_unit/Maddsub_mag_sum_cy<0>11 (sm_adder_unit/Maddsub_mag_sum_cy<0>)
+     LUT6:I5->O            1   0.205   0.580  mout<2>1 (mout<2>1)
+     LUT5:I4->O            7   0.205   1.118  mout<2>2 (mout<2>)
+     LUT5:I0->O            1   0.203   0.579  disp_unit/Mmux_seg31 (seg_2_OBUF)
+     OBUF:I->O                 2.571          seg_2_OBUF (seg<2>)
+    ----------------------------------------
+    Total                      9.374ns (4.814ns logic, 4.560ns route)
+                                       (51.4% logic, 48.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.015|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 11.04 secs
+ 
+--> 
+
+Total memory usage is 226216 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

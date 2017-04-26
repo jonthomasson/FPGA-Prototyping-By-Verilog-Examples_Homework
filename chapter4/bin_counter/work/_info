@@ -1,0 +1,43 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Stache\Documents\Xilinx Projects\MyFirstProject
+vbin_counter_tb
+!i10b 1
+!s100 ZM4D4od1[mZBFaEgKhOZ]0
+I0C7hC>O3]K]LfeW4MO4JE2
+V4Z>JkU@Va0J@IKL;]W_Ce0
+Z1 dC:\Users\Stache\Documents\Xilinx Projects\learning\chapter4\bin_counter
+w1207246210
+8C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/bin_counter/list_ch04_12_bin_counter_tb.v
+FC:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/bin_counter/list_ch04_12_bin_counter_tb.v
+L0 8
+Z2 OV;L;10.1e;51
+r1
+!s85 0
+31
+!s108 1471570871.775000
+!s107 C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/bin_counter/list_ch04_12_bin_counter_tb.v|
+!s90 -reportprogress|300|-work|work|C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/bin_counter/list_ch04_12_bin_counter_tb.v|
+!s101 -O0
+Z3 o-work work -O0
+vuniv_bin_counter
+Z4 If]RjA1JJ>^I`=>OTeB`Le0
+Z5 VeMo<Zf^Y^lHzzcWLM_0eK0
+R1
+Z6 w1207245638
+Z7 8C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/bin_counter/list_ch04_10_univ_bin_counter.v
+Z8 FC:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/bin_counter/list_ch04_10_univ_bin_counter.v
+L0 2
+R2
+r1
+31
+R3
+!i10b 1
+Z9 !s100 j9>5I[5ID[kJV83fK:5VP3
+!s85 0
+Z10 !s108 1471570871.494000
+Z11 !s107 C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/bin_counter/list_ch04_10_univ_bin_counter.v|
+Z12 !s90 -reportprogress|300|-work|work|C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/bin_counter/list_ch04_10_univ_bin_counter.v|
+!s101 -O0

@@ -1,0 +1,732 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.28 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.28 secs
+ 
+--> Reading design: text_screen_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "text_screen_top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "text_screen_top"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : text_screen_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter14\exercises\pong_text_underline\list_ch14_01_font_rom.v" into library work
+Parsing module <font_rom>.
+Analyzing Verilog file "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter14\exercises\pong_text_underline\list_ch12_04_xilinx_dual_port_ram_sync.v" into library work
+Parsing module <xilinx_dual_port_ram_sync>.
+Analyzing Verilog file "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter14\exercises\pong_text_underline\list_ch06_02_debounce.v" into library work
+Parsing module <debounce>.
+Analyzing Verilog file "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter14\exercises\pong_text_underline\list_ch14_04_text_screen_gen.v" into library work
+Parsing module <text_screen_gen>.
+Analyzing Verilog file "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter14\exercises\pong_text_underline\list_ch13_01_vga_sync.v" into library work
+Parsing module <vga_sync>.
+Analyzing Verilog file "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter14\exercises\pong_text_underline\list_ch14_05_text_screen_top.v" into library work
+Parsing module <text_screen_top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <text_screen_top>.
+
+Elaborating module <vga_sync>.
+WARNING:HDLCompiler:413 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter14\exercises\pong_text_underline\list_ch13_01_vga_sync.v" Line 68: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter14\exercises\pong_text_underline\list_ch13_01_vga_sync.v" Line 78: Result of 11-bit expression is truncated to fit in 10-bit target.
+
+Elaborating module <text_screen_gen>.
+
+Elaborating module <debounce>.
+WARNING:HDLCompiler:413 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter14\exercises\pong_text_underline\list_ch06_02_debounce.v" Line 58: Result of 32-bit expression is truncated to fit in 21-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter14\exercises\pong_text_underline\list_ch06_02_debounce.v" Line 82: Result of 32-bit expression is truncated to fit in 21-bit target.
+
+Elaborating module <font_rom>.
+
+Elaborating module <xilinx_dual_port_ram_sync(ADDR_WIDTH=12,DATA_WIDTH=7)>.
+WARNING:HDLCompiler:413 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter14\exercises\pong_text_underline\list_ch14_04_text_screen_gen.v" Line 87: Result of 32-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter14\exercises\pong_text_underline\list_ch14_04_text_screen_gen.v" Line 92: Result of 32-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:552 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter14\exercises\pong_text_underline\list_ch14_04_text_screen_gen.v" Line 40: Input port reset is not connected on this instance
+WARNING:HDLCompiler:552 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter14\exercises\pong_text_underline\list_ch14_04_text_screen_gen.v" Line 43: Input port reset is not connected on this instance
+WARNING:HDLCompiler:552 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter14\exercises\pong_text_underline\list_ch14_04_text_screen_gen.v" Line 46: Input port reset is not connected on this instance
+WARNING:HDLCompiler:552 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter14\exercises\pong_text_underline\list_ch14_04_text_screen_gen.v" Line 49: Input port reset is not connected on this instance
+WARNING:HDLCompiler:413 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter14\exercises\pong_text_underline\list_ch14_05_text_screen_top.v" Line 33: Result of 2-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:552 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter14\exercises\pong_text_underline\list_ch14_05_text_screen_top.v" Line 18: Input port reset is not connected on this instance
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <text_screen_top>.
+    Related source file is "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter14\exercises\pong_text_underline\list_ch14_05_text_screen_top.v".
+WARNING:Xst:2898 - Port 'reset', unconnected in block instance 'vsync_unit', is tied to GND.
+    Found 1-bit register for signal <master_clk>.
+    Found 3-bit register for signal <rgb>.
+    Found 1-bit adder for signal <master_clk_PWR_1_o_add_4_OUT<0>> created at line 33.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 D-type flip-flop(s).
+Unit <text_screen_top> synthesized.
+
+Synthesizing Unit <vga_sync>.
+    Related source file is "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter14\exercises\pong_text_underline\list_ch13_01_vga_sync.v".
+    Found 10-bit register for signal <v_count_reg>.
+    Found 10-bit register for signal <h_count_reg>.
+    Found 1-bit register for signal <v_sync_reg>.
+    Found 1-bit register for signal <h_sync_reg>.
+    Found 1-bit register for signal <mod2_reg>.
+    Found 10-bit adder for signal <h_count_reg[9]_GND_2_o_add_4_OUT> created at line 68.
+    Found 10-bit adder for signal <v_count_reg[9]_GND_2_o_add_7_OUT> created at line 78.
+    Found 10-bit comparator lessequal for signal <n0015> created at line 84
+    Found 10-bit comparator lessequal for signal <n0017> created at line 85
+    Found 10-bit comparator lessequal for signal <n0020> created at line 87
+    Found 10-bit comparator lessequal for signal <n0022> created at line 88
+    Found 10-bit comparator greater for signal <h_count_reg[9]_PWR_2_o_LessThan_15_o> created at line 91
+    Found 10-bit comparator greater for signal <v_count_reg[9]_GND_2_o_LessThan_16_o> created at line 91
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  23 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+Unit <vga_sync> synthesized.
+
+Synthesizing Unit <text_screen_gen>.
+    Related source file is "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter14\exercises\pong_text_underline\list_ch14_04_text_screen_gen.v".
+WARNING:Xst:2898 - Port 'reset', unconnected in block instance 'deb_unit0', is tied to GND.
+WARNING:Xst:2898 - Port 'reset', unconnected in block instance 'deb_unit1', is tied to GND.
+WARNING:Xst:2898 - Port 'reset', unconnected in block instance 'deb_unit2', is tied to GND.
+WARNING:Xst:2898 - Port 'reset', unconnected in block instance 'deb_unit3', is tied to GND.
+INFO:Xst:3210 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter14\exercises\pong_text_underline\list_ch14_04_text_screen_gen.v" line 40: Output port <db_level> of the instance <deb_unit0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter14\exercises\pong_text_underline\list_ch14_04_text_screen_gen.v" line 43: Output port <db_level> of the instance <deb_unit1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter14\exercises\pong_text_underline\list_ch14_04_text_screen_gen.v" line 46: Output port <db_level> of the instance <deb_unit2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter14\exercises\pong_text_underline\list_ch14_04_text_screen_gen.v" line 49: Output port <db_level> of the instance <deb_unit3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter14\exercises\pong_text_underline\list_ch14_04_text_screen_gen.v" line 58: Output port <dout_a> of the instance <video_ram> is unconnected or connected to loadless signal.
+    Found 5-bit register for signal <cur_y_reg>.
+    Found 10-bit register for signal <pix_x1_reg>.
+    Found 10-bit register for signal <pix_x2_reg>.
+    Found 10-bit register for signal <pix_y1_reg>.
+    Found 5-bit register for signal <pix_y2_reg<8:4>>.
+    Found 7-bit register for signal <cur_x_reg>.
+    Found 8-bit subtractor for signal <GND_3_o_GND_3_o_sub_19_OUT> created at line 90.
+    Found 6-bit subtractor for signal <GND_3_o_GND_3_o_sub_25_OUT> created at line 95.
+    Found 8-bit adder for signal <n0087[7:0]> created at line 89.
+    Found 6-bit adder for signal <n0089[5:0]> created at line 94.
+    Found 1-bit 8-to-1 multiplexer for signal <font_bit> created at line 85.
+    Found 5-bit comparator equal for signal <pix_y2_reg[8]_cur_y_reg[4]_equal_31_o> created at line 103
+    Found 7-bit comparator equal for signal <pix_x2_reg[9]_cur_x_reg[6]_equal_32_o> created at line 104
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred  47 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   5 Multiplexer(s).
+Unit <text_screen_gen> synthesized.
+
+Synthesizing Unit <debounce>.
+    Related source file is "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter14\exercises\pong_text_underline\list_ch06_02_debounce.v".
+    Found 21-bit register for signal <q_reg>.
+    Found 2-bit register for signal <state_reg>.
+    Found finite state machine <FSM_0> for signal <state_reg>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 21-bit subtractor for signal <_n0040> created at line 59.
+    Found 21-bit 4-to-1 multiplexer for signal <q_next> created at line 43.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   7 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <debounce> synthesized.
+
+Synthesizing Unit <font_rom>.
+    Related source file is "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter14\exercises\pong_text_underline\list_ch14_01_font_rom.v".
+    Found 11-bit register for signal <addr_reg>.
+    Found 2048x8-bit Read Only RAM for signal <data>
+    Summary:
+	inferred   1 RAM(s).
+	inferred  11 D-type flip-flop(s).
+Unit <font_rom> synthesized.
+
+Synthesizing Unit <xilinx_dual_port_ram_sync>.
+    Related source file is "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter14\exercises\pong_text_underline\list_ch12_04_xilinx_dual_port_ram_sync.v".
+        ADDR_WIDTH = 12
+        DATA_WIDTH = 7
+    Found 12-bit register for signal <addr_b_reg>.
+    Found 12-bit register for signal <addr_a_reg>.
+    Found 4096x7-bit dual-port RAM <Mram_ram> for signal <ram>.
+    Summary:
+	inferred   2 RAM(s).
+	inferred  24 D-type flip-flop(s).
+Unit <xilinx_dual_port_ram_sync> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 2048x8-bit single-port Read Only RAM                  : 1
+ 4096x7-bit dual-port RAM                              : 2
+# Adders/Subtractors                                   : 11
+ 1-bit adder                                           : 1
+ 10-bit adder                                          : 2
+ 21-bit subtractor                                     : 4
+ 6-bit adder                                           : 1
+ 6-bit subtractor                                      : 1
+ 8-bit adder                                           : 1
+ 8-bit subtractor                                      : 1
+# Registers                                            : 20
+ 1-bit register                                        : 4
+ 10-bit register                                       : 5
+ 11-bit register                                       : 1
+ 12-bit register                                       : 2
+ 21-bit register                                       : 4
+ 3-bit register                                        : 1
+ 5-bit register                                        : 2
+ 7-bit register                                        : 1
+# Comparators                                          : 8
+ 10-bit comparator greater                             : 2
+ 10-bit comparator lessequal                           : 4
+ 5-bit comparator equal                                : 1
+ 7-bit comparator equal                                : 1
+# Multiplexers                                         : 33
+ 1-bit 2-to-1 multiplexer                              : 8
+ 1-bit 8-to-1 multiplexer                              : 1
+ 21-bit 2-to-1 multiplexer                             : 16
+ 21-bit 4-to-1 multiplexer                             : 4
+ 3-bit 2-to-1 multiplexer                              : 2
+ 32-bit 2-to-1 multiplexer                             : 2
+# FSMs                                                 : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:2677 - Node <pix_y1_reg_0> of sequential type is unconnected in block <text_gen_unit>.
+WARNING:Xst:2677 - Node <pix_y1_reg_1> of sequential type is unconnected in block <text_gen_unit>.
+WARNING:Xst:2677 - Node <pix_y1_reg_2> of sequential type is unconnected in block <text_gen_unit>.
+WARNING:Xst:2677 - Node <pix_y1_reg_3> of sequential type is unconnected in block <text_gen_unit>.
+WARNING:Xst:2677 - Node <pix_y1_reg_9> of sequential type is unconnected in block <text_gen_unit>.
+
+Synthesizing (advanced) Unit <font_rom>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_data> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 8-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <addr_reg>      |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <data>          |          |
+    -----------------------------------------------------------------------
+Unit <font_rom> synthesized (advanced).
+
+Synthesizing (advanced) Unit <text_screen_top>.
+The following registers are absorbed into counter <master_clk>: 1 register on signal <master_clk>.
+Unit <text_screen_top> synthesized (advanced).
+
+Synthesizing (advanced) Unit <vga_sync>.
+The following registers are absorbed into counter <v_count_reg>: 1 register on signal <v_count_reg>.
+The following registers are absorbed into counter <h_count_reg>: 1 register on signal <h_count_reg>.
+Unit <vga_sync> synthesized (advanced).
+
+Synthesizing (advanced) Unit <xilinx_dual_port_ram_sync>.
+INFO:Xst:3227 - The RAM <Mram_ram>, combined with <Mram_ram1>, will be implemented as a BLOCK RAM, absorbing the following register(s): <addr_a_reg> <addr_b_reg>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4096-word x 7-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <we>            | high     |
+    |     addrA          | connected to signal <addr_a>        |          |
+    |     diA            | connected to signal <din_a>         |          |
+    |     doA            | connected to signal <dout_a>        |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 4096-word x 7-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <clk>           | rise     |
+    |     addrB          | connected to signal <addr_b>        |          |
+    |     doB            | connected to signal <dout_b>        |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <xilinx_dual_port_ram_sync> synthesized (advanced).
+WARNING:Xst:2677 - Node <pix_y1_reg_0> of sequential type is unconnected in block <text_screen_gen>.
+WARNING:Xst:2677 - Node <pix_y1_reg_1> of sequential type is unconnected in block <text_screen_gen>.
+WARNING:Xst:2677 - Node <pix_y1_reg_2> of sequential type is unconnected in block <text_screen_gen>.
+WARNING:Xst:2677 - Node <pix_y1_reg_3> of sequential type is unconnected in block <text_screen_gen>.
+WARNING:Xst:2677 - Node <pix_y1_reg_9> of sequential type is unconnected in block <text_screen_gen>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 2048x8-bit single-port distributed Read Only RAM      : 1
+ 4096x7-bit dual-port block RAM                        : 1
+# Adders/Subtractors                                   : 8
+ 21-bit subtractor                                     : 4
+ 6-bit adder                                           : 1
+ 6-bit subtractor                                      : 1
+ 8-bit adder                                           : 1
+ 8-bit subtractor                                      : 1
+# Counters                                             : 3
+ 1-bit up counter                                      : 1
+ 10-bit up counter                                     : 2
+# Registers                                            : 143
+ Flip-Flops                                            : 143
+# Comparators                                          : 8
+ 10-bit comparator greater                             : 2
+ 10-bit comparator lessequal                           : 4
+ 5-bit comparator equal                                : 1
+ 7-bit comparator equal                                : 1
+# Multiplexers                                         : 33
+ 1-bit 2-to-1 multiplexer                              : 8
+ 1-bit 8-to-1 multiplexer                              : 1
+ 21-bit 2-to-1 multiplexer                             : 16
+ 21-bit 4-to-1 multiplexer                             : 4
+ 3-bit 2-to-1 multiplexer                              : 2
+ 32-bit 2-to-1 multiplexer                             : 2
+# FSMs                                                 : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <text_gen_unit/deb_unit0/FSM_0> on signal <state_reg[1:2]> with gray encoding.
+Optimizing FSM <text_gen_unit/deb_unit1/FSM_0> on signal <state_reg[1:2]> with gray encoding.
+Optimizing FSM <text_gen_unit/deb_unit2/FSM_0> on signal <state_reg[1:2]> with gray encoding.
+Optimizing FSM <text_gen_unit/deb_unit3/FSM_0> on signal <state_reg[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 11    | 01
+ 10    | 11
+ 01    | 10
+-------------------
+
+Optimizing unit <text_screen_top> ...
+
+Optimizing unit <text_screen_gen> ...
+
+Optimizing unit <debounce> ...
+
+Optimizing unit <font_rom> ...
+
+Optimizing unit <vga_sync> ...
+WARNING:Xst:1710 - FF/Latch <rgb_reg_0> (without init value) has a constant value of 0 in block <text_screen_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rgb_reg_2> (without init value) has a constant value of 0 in block <text_screen_top>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block text_screen_top, actual ratio is 7.
+
+Final Macro Processing ...
+
+Processing Unit <text_screen_top> :
+	Found 2-bit shift register for signal <text_gen_unit/pix_y2_reg_8>.
+	Found 2-bit shift register for signal <text_gen_unit/pix_y2_reg_7>.
+	Found 2-bit shift register for signal <text_gen_unit/pix_y2_reg_6>.
+	Found 2-bit shift register for signal <text_gen_unit/pix_y2_reg_5>.
+	Found 2-bit shift register for signal <text_gen_unit/pix_y2_reg_4>.
+	Found 2-bit shift register for signal <text_gen_unit/pix_x2_reg_9>.
+	Found 2-bit shift register for signal <text_gen_unit/pix_x2_reg_8>.
+	Found 2-bit shift register for signal <text_gen_unit/pix_x2_reg_7>.
+	Found 2-bit shift register for signal <text_gen_unit/pix_x2_reg_6>.
+	Found 2-bit shift register for signal <text_gen_unit/pix_x2_reg_5>.
+	Found 2-bit shift register for signal <text_gen_unit/pix_x2_reg_4>.
+	Found 2-bit shift register for signal <text_gen_unit/pix_x2_reg_3>.
+	Found 2-bit shift register for signal <text_gen_unit/pix_x2_reg_2>.
+	Found 2-bit shift register for signal <text_gen_unit/pix_x2_reg_1>.
+	Found 2-bit shift register for signal <text_gen_unit/pix_x2_reg_0>.
+Unit <text_screen_top> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 140
+ Flip-Flops                                            : 140
+# Shift Registers                                      : 15
+ 2-bit shift register                                  : 15
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : text_screen_top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 904
+#      GND                         : 1
+#      INV                         : 83
+#      LUT1                        : 22
+#      LUT2                        : 2
+#      LUT3                        : 11
+#      LUT4                        : 13
+#      LUT5                        : 106
+#      LUT6                        : 293
+#      MUXCY                       : 98
+#      MUXF7                       : 117
+#      MUXF8                       : 53
+#      VCC                         : 1
+#      XORCY                       : 104
+# FlipFlops/Latches                : 155
+#      FD                          : 110
+#      FDE                         : 16
+#      FDR                         : 3
+#      FDRE                        : 26
+# RAMS                             : 2
+#      RAMB16BWER                  : 2
+# Shift Registers                  : 15
+#      SRLC16E                     : 15
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 17
+#      IBUF                        : 12
+#      OBUF                        : 5
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             154  out of  18224     0%  
+ Number of Slice LUTs:                  545  out of   9112     5%  
+    Number used as Logic:               530  out of   9112     5%  
+    Number used as Memory:               15  out of   2176     0%  
+       Number used as SRL:               15
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    558
+   Number with an unused Flip Flop:     404  out of    558    72%  
+   Number with an unused LUT:            13  out of    558     2%  
+   Number of fully used LUT-FF pairs:   141  out of    558    25%  
+   Number of unique control sets:        11
+
+IO Utilization: 
+ Number of IOs:                          18
+ Number of bonded IOBs:                  18  out of    232     7%  
+    IOB Flip Flops/Latches:               1
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                2  out of     32     6%  
+    Number using Block RAM only:          2
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 2     |
+master_clk                         | BUFG                   | 170   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 5.863ns (Maximum Frequency: 170.560MHz)
+   Minimum input arrival time before clock: 6.153ns
+   Maximum output required time after clock: 3.597ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 1.913ns (frequency: 522.821MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.913ns (Levels of Logic = 1)
+  Source:            master_clk (FF)
+  Destination:       master_clk (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: master_clk to master_clk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.447   0.579  master_clk (master_clk)
+     INV:I->O              1   0.206   0.579  Mcount_master_clk_xor<0>11_INV_0 (Result)
+     FD:D                      0.102          master_clk
+    ----------------------------------------
+    Total                      1.913ns (0.755ns logic, 1.158ns route)
+                                       (39.5% logic, 60.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'master_clk'
+  Clock period: 5.863ns (frequency: 170.560MHz)
+  Total number of paths / destination ports: 13637 / 266
+-------------------------------------------------------------------------
+Delay:               5.863ns (Levels of Logic = 7)
+  Source:            text_gen_unit/deb_unit0/q_reg_0 (FF)
+  Destination:       text_gen_unit/cur_x_reg_6 (FF)
+  Source Clock:      master_clk rising
+  Destination Clock: master_clk rising
+
+  Data Path: text_gen_unit/deb_unit0/q_reg_0 to text_gen_unit/cur_x_reg_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.447   0.617  text_gen_unit/deb_unit0/q_reg_0 (text_gen_unit/deb_unit0/q_reg_0)
+     LUT1:I0->O            1   0.205   0.000  text_gen_unit/deb_unit0/Msub__n0040_cy<0>_rt (text_gen_unit/deb_unit0/Msub__n0040_cy<0>_rt)
+     MUXCY:S->O            1   0.172   0.000  text_gen_unit/deb_unit0/Msub__n0040_cy<0> (text_gen_unit/deb_unit0/Msub__n0040_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  text_gen_unit/deb_unit0/Msub__n0040_cy<1> (text_gen_unit/deb_unit0/Msub__n0040_cy<1>)
+     XORCY:CI->O           2   0.180   0.981  text_gen_unit/deb_unit0/Msub__n0040_xor<2> (text_gen_unit/deb_unit0/_n0040<18>)
+     LUT6:I0->O            4   0.203   0.912  text_gen_unit/deb_unit0/db_tick22 (text_gen_unit/deb_unit0/db_tick21)
+     LUT6:I3->O            3   0.205   0.651  text_gen_unit/deb_unit0/db_tick25 (text_gen_unit/deb_unit0/db_tick_bdd2)
+     LUT6:I5->O            6   0.205   0.744  text_gen_unit/_n0116_inv1 (text_gen_unit/_n0116_inv)
+     FDRE:CE                   0.322          text_gen_unit/cur_x_reg_3
+    ----------------------------------------
+    Total                      5.863ns (1.958ns logic, 3.905ns route)
+                                       (33.4% logic, 66.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'master_clk'
+  Total number of paths / destination ports: 153 / 131
+-------------------------------------------------------------------------
+Offset:              6.153ns (Levels of Logic = 4)
+  Source:            btn_right (PAD)
+  Destination:       text_gen_unit/cur_x_reg_6 (FF)
+  Destination Clock: master_clk rising
+
+  Data Path: btn_right to text_gen_unit/cur_x_reg_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            28   1.222   1.482  btn_right_IBUF (btn_right_IBUF)
+     LUT4:I0->O            1   0.203   0.808  text_gen_unit/deb_unit0/db_tick1_SW0 (N17)
+     LUT6:I3->O            1   0.205   0.827  text_gen_unit/deb_unit0/db_tick25_SW3 (N33)
+     LUT6:I2->O            7   0.203   0.773  text_gen_unit/move_right_tick_GND_3_o_AND_5_o11 (text_gen_unit/move_right_tick_GND_3_o_AND_5_o)
+     FDRE:R                    0.430          text_gen_unit/cur_x_reg_3
+    ----------------------------------------
+    Total                      6.153ns (2.263ns logic, 3.890ns route)
+                                       (36.8% logic, 63.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            rgb_reg_1 (FF)
+  Destination:       rgb<1> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: rgb_reg_1 to rgb<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.447   0.579  rgb_reg_1 (rgb_reg_1)
+     OBUF:I->O                 2.571          rgb_1_OBUF (rgb<1>)
+    ----------------------------------------
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'master_clk'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            vsync_unit/h_sync_reg (FF)
+  Destination:       hsync (PAD)
+  Source Clock:      master_clk rising
+
+  Data Path: vsync_unit/h_sync_reg to hsync
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.447   0.579  vsync_unit/h_sync_reg (vsync_unit/h_sync_reg)
+     OBUF:I->O                 2.571          hsync_OBUF (hsync)
+    ----------------------------------------
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    1.913|         |         |         |
+master_clk     |    9.302|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock master_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+master_clk     |    5.863|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 19.00 secs
+Total CPU time to Xst completion: 18.59 secs
+ 
+--> 
+
+Total memory usage is 233064 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   29 (   0 filtered)
+Number of infos    :    7 (   0 filtered)
+

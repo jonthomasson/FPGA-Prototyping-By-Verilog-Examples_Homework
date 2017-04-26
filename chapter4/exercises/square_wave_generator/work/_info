@@ -1,0 +1,43 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Stache\Documents\Xilinx Projects\learning\chapter4\bin_counter
+vsquare_wave
+Z1 I^SL=zH6>kM@ANE<cdOU1T1
+Z2 V@4CnNYgWhJCnnTUo<ic_Q3
+Z3 dC:\Users\Stache\Documents\Xilinx Projects\learning\chapter4\square_wave_generator
+Z4 w1471973313
+Z5 8C:\Users\Stache\Documents\Xilinx Projects\learning\chapter4\square_wave_generator\square_wave.v
+Z6 FC:\Users\Stache\Documents\Xilinx Projects\learning\chapter4\square_wave_generator\square_wave.v
+L0 21
+Z7 OV;L;10.1e;51
+r1
+31
+Z8 !s90 -reportprogress|300|-work|work|C:\Users\Stache\Documents\Xilinx Projects\learning\chapter4\square_wave_generator\square_wave.v|
+Z9 o-work work -O0
+!i10b 1
+Z10 !s100 c0O<cgWV9FRf4?dV6_KB62
+!s85 0
+Z11 !s108 1471973788.970000
+Z12 !s107 C:\Users\Stache\Documents\Xilinx Projects\learning\chapter4\square_wave_generator\square_wave.v|
+!s101 -O0
+vsquare_wave_tb
+!i10b 1
+Z13 !s100 =Q]Pi0FAADBn;[@6mA;Ne3
+Z14 I`n?7o>0A=81RIE2EANSkA2
+Z15 VE`g@I<<f6g<<HE>heb6jD0
+R3
+Z16 w1471963400
+Z17 8C:\Users\Stache\Documents\Xilinx Projects\learning\chapter4\square_wave_generator\square_wave_tb.v
+Z18 FC:\Users\Stache\Documents\Xilinx Projects\learning\chapter4\square_wave_generator\square_wave_tb.v
+L0 25
+R7
+r1
+!s85 0
+31
+!s108 1471973789.241000
+!s107 C:\Users\Stache\Documents\Xilinx Projects\learning\chapter4\square_wave_generator\square_wave_tb.v|
+Z19 !s90 -reportprogress|300|-work|work|C:\Users\Stache\Documents\Xilinx Projects\learning\chapter4\square_wave_generator\square_wave_tb.v|
+!s101 -O0
+R9

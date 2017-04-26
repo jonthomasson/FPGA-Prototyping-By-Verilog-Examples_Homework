@@ -1,0 +1,34 @@
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter13/vgatest/vga_test.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter13/vgatest/vga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "vga_test.ngc" vga_test.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "vga_test.ngc" vga_test.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "vga_test.ngc" vga_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_test_map.ncd vga_test.ngd vga_test.pcf 
+par -w -intstyle ise -ol high -mt off vga_test_map.ncd vga_test.ncd vga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_test.twx vga_test.ncd -o vga_test.twr vga_test.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f vga_test.ut vga_test.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "vga_test.ngc" vga_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_test_map.ncd vga_test.ngd vga_test.pcf 
+par -w -intstyle ise -ol high -mt off vga_test_map.ncd vga_test.ncd vga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_test.twx vga_test.ncd -o vga_test.twr vga_test.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f vga_test.ut vga_test.ncd 
+bitgen -intstyle ise -f vga_test.ut vga_test.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "vga_test.ngc" vga_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_test_map.ncd vga_test.ngd vga_test.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "vga_test.ngc" vga_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_test_map.ncd vga_test.ngd vga_test.pcf 
+par -w -intstyle ise -ol high -mt off vga_test_map.ncd vga_test.ncd vga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_test.twx vga_test.ncd -o vga_test.twr vga_test.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f vga_test.ut vga_test.ncd 
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter13/vgatest/vga_test.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter13/vgatest/vga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "vga_test.ngc" vga_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_test_map.ncd vga_test.ngd vga_test.pcf 
+par -w -intstyle ise -ol high -mt off vga_test_map.ncd vga_test.ncd vga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_test.twx vga_test.ncd -o vga_test.twr vga_test.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f vga_test.ut vga_test.ncd 
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter13/vgatest/vga_test.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter13/vgatest/vga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "vga_test.ngc" vga_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_test_map.ncd vga_test.ngd vga_test.pcf 
+par -w -intstyle ise -ol high -mt off vga_test_map.ncd vga_test.ncd vga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_test.twx vga_test.ncd -o vga_test.twr vga_test.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f vga_test.ut vga_test.ncd 
+bitgen -intstyle ise -f vga_test.ut vga_test.ncd 

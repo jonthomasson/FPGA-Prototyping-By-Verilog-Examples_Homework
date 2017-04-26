@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Stache\Documents\Xilinx Projects\learning\chapter13\exercises\vgatestpattern\pong_top_st.ncd
+OUTFILE=C:\Users\Stache\Documents\Xilinx Projects\learning\chapter13\exercises\vgatestpattern\pong_top_st.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\Users\Stache\Documents\Xilinx Projects\learning\chapter13\exercises\vgatestpattern
+LICENSE=WebPack
+USER_INFO=211027110_0_0_178

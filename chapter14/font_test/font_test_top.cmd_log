@@ -1,0 +1,24 @@
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter14/font_test/font_test_top.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter14/font_test/font_test_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "font_test_top.ngc" font_test_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o font_test_top_map.ncd font_test_top.ngd font_test_top.pcf 
+par -w -intstyle ise -ol high -mt off font_test_top_map.ncd font_test_top.ncd font_test_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml font_test_top.twx font_test_top.ncd -o font_test_top.twr font_test_top.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f font_test_top.ut font_test_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter14/font_test/font_test_top.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter14/font_test/font_test_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "font_test_top.ngc" font_test_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o font_test_top_map.ncd font_test_top.ngd font_test_top.pcf 
+par -w -intstyle ise -ol high -mt off font_test_top_map.ncd font_test_top.ncd font_test_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml font_test_top.twx font_test_top.ncd -o font_test_top.twr font_test_top.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f font_test_top.ut font_test_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter14/font_test/font_test_top.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter14/font_test/font_test_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "font_test_top.ngc" font_test_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o font_test_top_map.ncd font_test_top.ngd font_test_top.pcf 
+par -w -intstyle ise -ol high -mt off font_test_top_map.ncd font_test_top.ncd font_test_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml font_test_top.twx font_test_top.ncd -o font_test_top.twr font_test_top.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f font_test_top.ut font_test_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter14/font_test/font_test_top.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter14/font_test/font_test_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "font_test_top.ngc" font_test_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o font_test_top_map.ncd font_test_top.ngd font_test_top.pcf 
+par -w -intstyle ise -ol high -mt off font_test_top_map.ncd font_test_top.ncd font_test_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml font_test_top.twx font_test_top.ncd -o font_test_top.twr font_test_top.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f font_test_top.ut font_test_top.ncd 

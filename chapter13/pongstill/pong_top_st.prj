@@ -1,0 +1,3 @@
+verilog work "list_ch13_03_pong_graph_st.v"
+verilog work "list_ch13_01_vga_sync.v"
+verilog work "list_ch13_04_pong_top_st.v"

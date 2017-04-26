@@ -1,0 +1,55 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sat Aug 20 07:35:14 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "led<0>" LOCATE = SITE "U16" LEVEL 1;
+COMP "btn<0>" LOCATE = SITE "B8" LEVEL 1;
+COMP "led<1>" LOCATE = SITE "V16" LEVEL 1;
+COMP "btn<1>" LOCATE = SITE "A8" LEVEL 1;
+COMP "led<2>" LOCATE = SITE "U15" LEVEL 1;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "led<3>" LOCATE = SITE "V15" LEVEL 1;
+COMP "led<4>" LOCATE = SITE "M11" LEVEL 1;
+COMP "led<5>" LOCATE = SITE "N11" LEVEL 1;
+COMP "led<6>" LOCATE = SITE "R11" LEVEL 1;
+COMP "led<7>" LOCATE = SITE "T11" LEVEL 1;
+COMP "sw<0>" LOCATE = SITE "T10" LEVEL 1;
+COMP "sw<1>" LOCATE = SITE "T9" LEVEL 1;
+COMP "sw<2>" LOCATE = SITE "V9" LEVEL 1;
+COMP "reset" LOCATE = SITE "C4" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "fifo_unit/r_ptr_reg_1" BEL "fifo_unit/r_ptr_reg_0"
+        BEL "fifo_unit/w_ptr_reg_1" BEL "fifo_unit/w_ptr_reg_0" BEL
+        "fifo_unit/_o188_2" BEL "fifo_unit/_o188_1" BEL "fifo_unit/_o188_0"
+        BEL "fifo_unit/_o186_2" BEL "fifo_unit/_o186_1" BEL
+        "fifo_unit/_o186_0" BEL "fifo_unit/_o184_2" BEL "fifo_unit/_o184_1"
+        BEL "fifo_unit/_o184_0" BEL "fifo_unit/_o182_2" BEL
+        "fifo_unit/_o182_1" BEL "fifo_unit/_o182_0" BEL
+        "btn_db_unit1/state_reg_FSM_FFd1" BEL
+        "btn_db_unit1/state_reg_FSM_FFd2" BEL "btn_db_unit1/q_reg_20" BEL
+        "btn_db_unit1/q_reg_19" BEL "btn_db_unit1/q_reg_18" BEL
+        "btn_db_unit1/q_reg_17" BEL "btn_db_unit1/q_reg_16" BEL
+        "btn_db_unit1/q_reg_15" BEL "btn_db_unit1/q_reg_14" BEL
+        "btn_db_unit1/q_reg_13" BEL "btn_db_unit1/q_reg_12" BEL
+        "btn_db_unit1/q_reg_11" BEL "btn_db_unit1/q_reg_10" BEL
+        "btn_db_unit1/q_reg_9" BEL "btn_db_unit1/q_reg_8" BEL
+        "btn_db_unit1/q_reg_7" BEL "btn_db_unit1/q_reg_6" BEL
+        "btn_db_unit1/q_reg_5" BEL "btn_db_unit1/q_reg_4" BEL
+        "btn_db_unit1/q_reg_3" BEL "btn_db_unit1/q_reg_2" BEL
+        "btn_db_unit1/q_reg_1" BEL "btn_db_unit1/q_reg_0" BEL
+        "btn_db_unit0/state_reg_FSM_FFd1" BEL
+        "btn_db_unit0/state_reg_FSM_FFd2" BEL "btn_db_unit0/q_reg_20" BEL
+        "btn_db_unit0/q_reg_19" BEL "btn_db_unit0/q_reg_18" BEL
+        "btn_db_unit0/q_reg_17" BEL "btn_db_unit0/q_reg_16" BEL
+        "btn_db_unit0/q_reg_15" BEL "btn_db_unit0/q_reg_14" BEL
+        "btn_db_unit0/q_reg_13" BEL "btn_db_unit0/q_reg_12" BEL
+        "btn_db_unit0/q_reg_11" BEL "btn_db_unit0/q_reg_10" BEL
+        "btn_db_unit0/q_reg_9" BEL "btn_db_unit0/q_reg_8" BEL
+        "btn_db_unit0/q_reg_7" BEL "btn_db_unit0/q_reg_6" BEL
+        "btn_db_unit0/q_reg_5" BEL "btn_db_unit0/q_reg_4" BEL
+        "btn_db_unit0/q_reg_3" BEL "btn_db_unit0/q_reg_2" BEL
+        "btn_db_unit0/q_reg_1" BEL "btn_db_unit0/q_reg_0" BEL
+        "fifo_unit/empty_reg" BEL "fifo_unit/full_reg" BEL "clk_BUFGP/BUFG";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+SCHEMATIC END;
+

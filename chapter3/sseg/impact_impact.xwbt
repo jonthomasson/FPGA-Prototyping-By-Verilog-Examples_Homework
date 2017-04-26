@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=C:\Users\Stache\Documents\Xilinx Projects\learning\chapter3\sseg\impact.xsl
+OUTFILE=C:\Users\Stache\Documents\Xilinx Projects\learning\chapter3\sseg\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=C:\Users\Stache\Documents\Xilinx Projects\learning\chapter3\sseg
+LICENSE=iMPACT
+USER_INFO=iMPACT

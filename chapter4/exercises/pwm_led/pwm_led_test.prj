@@ -1,0 +1,2 @@
+verilog work "pwm_led.v"
+verilog work "pwm_led_test.v"

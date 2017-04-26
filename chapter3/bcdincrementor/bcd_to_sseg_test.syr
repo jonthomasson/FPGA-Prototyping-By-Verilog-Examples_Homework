@@ -1,0 +1,447 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 1.17 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 1.17 secs
+ 
+--> Reading design: bcd_to_sseg_test.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "bcd_to_sseg_test.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "bcd_to_sseg_test"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : bcd_to_sseg_test
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter3\bcdincrementor\disp_mux.v" into library work
+Parsing module <disp_mux>.
+Analyzing Verilog file "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter3\bcdincrementor\bcd_to_sseg.v" into library work
+Parsing module <bcd_to_sseg>.
+Analyzing Verilog file "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter3\bcdincrementor\list_ch03_15_hex_to_sseg_test.v" into library work
+Parsing module <bcd_to_sseg_test>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <bcd_to_sseg_test>.
+WARNING:HDLCompiler:413 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter3\bcdincrementor\list_ch03_15_hex_to_sseg_test.v" Line 15: Result of 9-bit expression is truncated to fit in 8-bit target.
+
+Elaborating module <bcd_to_sseg>.
+
+Elaborating module <disp_mux>.
+WARNING:HDLCompiler:413 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter3\bcdincrementor\disp_mux.v" Line 27: Result of 19-bit expression is truncated to fit in 18-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <bcd_to_sseg_test>.
+    Related source file is "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter3\bcdincrementor\list_ch03_15_hex_to_sseg_test.v".
+    Found 8-bit adder for signal <inc> created at line 15.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <bcd_to_sseg_test> synthesized.
+
+Synthesizing Unit <bcd_to_sseg>.
+    Related source file is "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter3\bcdincrementor\bcd_to_sseg.v".
+    Found 16x7-bit Read Only RAM for signal <_n0026[0:6]>
+    Summary:
+	inferred   1 RAM(s).
+Unit <bcd_to_sseg> synthesized.
+
+Synthesizing Unit <disp_mux>.
+    Related source file is "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter3\bcdincrementor\disp_mux.v".
+    Found 18-bit register for signal <q_reg>.
+    Found 18-bit adder for signal <q_next> created at line 27.
+    Found 4x4-bit Read Only RAM for signal <an>
+    Found 8-bit 4-to-1 multiplexer for signal <seg> created at line 32.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  18 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <disp_mux> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 5
+ 16x7-bit single-port Read Only RAM                    : 4
+ 4x4-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 2
+ 18-bit adder                                          : 1
+ 8-bit adder                                           : 1
+# Registers                                            : 1
+ 18-bit register                                       : 1
+# Multiplexers                                         : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <bcd_to_sseg>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0026[0:6]> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <bcd>           |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <bcd_to_sseg> synthesized (advanced).
+
+Synthesizing (advanced) Unit <disp_mux>.
+The following registers are absorbed into counter <q_reg>: 1 register on signal <q_reg>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_an> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <q_reg>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <an>            |          |
+    -----------------------------------------------------------------------
+Unit <disp_mux> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 5
+ 16x7-bit single-port distributed Read Only RAM        : 4
+ 4x4-bit single-port distributed Read Only RAM         : 1
+# Adders/Subtractors                                   : 1
+ 8-bit adder                                           : 1
+# Counters                                             : 1
+ 18-bit up counter                                     : 1
+# Multiplexers                                         : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <bcd_to_sseg_test> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block bcd_to_sseg_test, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 18
+ Flip-Flops                                            : 18
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : bcd_to_sseg_test.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 91
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 17
+#      LUT2                        : 4
+#      LUT3                        : 1
+#      LUT4                        : 3
+#      LUT5                        : 11
+#      LUT6                        : 16
+#      MUXCY                       : 17
+#      MUXF7                       : 1
+#      VCC                         : 1
+#      XORCY                       : 18
+# FlipFlops/Latches                : 18
+#      FD                          : 18
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 20
+#      IBUF                        : 8
+#      OBUF                        : 12
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              18  out of  18224     0%  
+ Number of Slice LUTs:                   53  out of   9112     0%  
+    Number used as Logic:                53  out of   9112     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     53
+   Number with an unused Flip Flop:      35  out of     53    66%  
+   Number with an unused LUT:             0  out of     53     0%  
+   Number of fully used LUT-FF pairs:    18  out of     53    33%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                          21
+ Number of bonded IOBs:                  21  out of    232     9%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 18    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 2.220ns (Maximum Frequency: 450.521MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 7.455ns
+   Maximum combinational path delay: 10.337ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.220ns (frequency: 450.521MHz)
+  Total number of paths / destination ports: 171 / 18
+-------------------------------------------------------------------------
+Delay:               2.220ns (Levels of Logic = 3)
+  Source:            disp_unit/q_reg_16 (FF)
+  Destination:       disp_unit/q_reg_17 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: disp_unit/q_reg_16 to disp_unit/q_reg_17
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              21   0.447   1.114  disp_unit/q_reg_16 (disp_unit/q_reg_16)
+     LUT1:I0->O            1   0.205   0.000  disp_unit/Mcount_q_reg_cy<16>_rt (disp_unit/Mcount_q_reg_cy<16>_rt)
+     MUXCY:S->O            0   0.172   0.000  disp_unit/Mcount_q_reg_cy<16> (disp_unit/Mcount_q_reg_cy<16>)
+     XORCY:CI->O           1   0.180   0.000  disp_unit/Mcount_q_reg_xor<17> (Result<17>)
+     FD:D                      0.102          disp_unit/q_reg_17
+    ----------------------------------------
+    Total                      2.220ns (1.106ns logic, 1.114ns route)
+                                       (49.8% logic, 50.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 69 / 11
+-------------------------------------------------------------------------
+Offset:              7.455ns (Levels of Logic = 4)
+  Source:            disp_unit/q_reg_17 (FF)
+  Destination:       seg<3> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: disp_unit/q_reg_17 to seg<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              24   0.447   1.401  disp_unit/q_reg_17 (disp_unit/q_reg_17)
+     LUT5:I2->O            2   0.205   0.981  disp_unit/Mmux_seg141 (disp_unit/Mmux_seg14)
+     LUT6:I0->O            2   0.203   0.864  disp_unit/Mmux_seg1 (seg_0_OBUF)
+     LUT6:I2->O            1   0.203   0.579  disp_unit/Mmux_seg4 (seg_3_OBUF)
+     OBUF:I->O                 2.571          seg_3_OBUF (seg<3>)
+    ----------------------------------------
+    Total                      7.455ns (3.629ns logic, 3.825ns route)
+                                       (48.7% logic, 51.3% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 312 / 7
+-------------------------------------------------------------------------
+Delay:               10.337ns (Levels of Logic = 7)
+  Source:            sw<0> (PAD)
+  Destination:       seg<3> (PAD)
+
+  Data Path: sw<0> to seg<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             9   1.222   1.077  sw_0_IBUF (Madd_inc_cy<0>)
+     LUT4:I0->O            8   0.203   1.031  Madd_inc_xor<4>111 (Madd_inc_xor<4>11)
+     LUT4:I1->O            3   0.205   0.995  Madd_inc_xor<6>11 (inc<6>)
+     LUT5:I0->O            2   0.203   0.981  disp_unit/Mmux_seg141 (disp_unit/Mmux_seg14)
+     LUT6:I0->O            2   0.203   0.864  disp_unit/Mmux_seg1 (seg_0_OBUF)
+     LUT6:I2->O            1   0.203   0.579  disp_unit/Mmux_seg4 (seg_3_OBUF)
+     OBUF:I->O                 2.571          seg_3_OBUF (seg<3>)
+    ----------------------------------------
+    Total                     10.337ns (4.810ns logic, 5.527ns route)
+                                       (46.5% logic, 53.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.220|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.97 secs
+ 
+--> 
+
+Total memory usage is 228776 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

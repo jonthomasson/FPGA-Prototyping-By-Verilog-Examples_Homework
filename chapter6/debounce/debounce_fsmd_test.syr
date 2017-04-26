@@ -1,0 +1,512 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.27 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.27 secs
+ 
+--> Reading design: debounce_fsmd_test.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "debounce_fsmd_test.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "debounce_fsmd_test"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : debounce_fsmd_test
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter6\debounce\list_ch06_02_debounce.v" into library work
+Parsing module <debounce>.
+Analyzing Verilog file "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter6\debounce\list_ch04_15_disp_hex_mux.v" into library work
+Parsing module <disp_hex_mux>.
+Analyzing Verilog file "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter6\debounce\list_ch06_03_debounce_fsmd_test.v" into library work
+Parsing module <debounce_fsmd_test>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <debounce_fsmd_test>.
+
+Elaborating module <disp_hex_mux>.
+WARNING:HDLCompiler:413 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter6\debounce\list_ch04_15_disp_hex_mux.v" Line 29: Result of 19-bit expression is truncated to fit in 18-bit target.
+
+Elaborating module <debounce>.
+WARNING:HDLCompiler:413 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter6\debounce\list_ch06_02_debounce.v" Line 58: Result of 32-bit expression is truncated to fit in 21-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter6\debounce\list_ch06_02_debounce.v" Line 82: Result of 32-bit expression is truncated to fit in 21-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter6\debounce\list_ch06_03_debounce_fsmd_test.v" Line 41: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter6\debounce\list_ch06_03_debounce_fsmd_test.v" Line 44: Result of 32-bit expression is truncated to fit in 8-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <debounce_fsmd_test>.
+    Related source file is "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter6\debounce\list_ch06_03_debounce_fsmd_test.v".
+INFO:Xst:3210 - "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter6\debounce\list_ch06_03_debounce_fsmd_test.v" line 24: Output port <db_level> of the instance <db_unit> is unconnected or connected to loadless signal.
+    Found 8-bit register for signal <d_reg>.
+    Found 8-bit register for signal <b_reg>.
+    Found 1-bit register for signal <btn_reg>.
+    Found 9-bit adder for signal <n0028[8:0]> created at line 42.
+    Found 9-bit adder for signal <n0030[8:0]> created at line 45.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  17 D-type flip-flop(s).
+Unit <debounce_fsmd_test> synthesized.
+
+Synthesizing Unit <disp_hex_mux>.
+    Related source file is "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter6\debounce\list_ch04_15_disp_hex_mux.v".
+    Found 18-bit register for signal <q_reg>.
+    Found 18-bit adder for signal <q_next> created at line 29.
+    Found 4x5-bit Read Only RAM for signal <_n0034>
+    Found 16x7-bit Read Only RAM for signal <_n0051[0:6]>
+    Found 1-bit 4-to-1 multiplexer for signal <hex_in<3>> created at line 64.
+    Found 1-bit 4-to-1 multiplexer for signal <hex_in<2>> created at line 64.
+    Found 1-bit 4-to-1 multiplexer for signal <hex_in<1>> created at line 64.
+    Found 1-bit 4-to-1 multiplexer for signal <hex_in<0>> created at line 64.
+    Summary:
+	inferred   2 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  18 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+Unit <disp_hex_mux> synthesized.
+
+Synthesizing Unit <debounce>.
+    Related source file is "C:\Users\Stache\Documents\Xilinx Projects\learning\chapter6\debounce\list_ch06_02_debounce.v".
+    Found 21-bit register for signal <q_reg>.
+    Found 2-bit register for signal <state_reg>.
+    Found finite state machine <FSM_0> for signal <state_reg>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 21-bit subtractor for signal <_n0040> created at line 59.
+    Found 21-bit 4-to-1 multiplexer for signal <q_next> created at line 43.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   7 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <debounce> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x7-bit single-port Read Only RAM                    : 1
+ 4x5-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 4
+ 18-bit adder                                          : 1
+ 21-bit subtractor                                     : 1
+ 9-bit adder                                           : 2
+# Registers                                            : 5
+ 1-bit register                                        : 1
+ 18-bit register                                       : 1
+ 21-bit register                                       : 1
+ 8-bit register                                        : 2
+# Multiplexers                                         : 11
+ 1-bit 2-to-1 multiplexer                              : 2
+ 1-bit 4-to-1 multiplexer                              : 4
+ 21-bit 2-to-1 multiplexer                             : 4
+ 21-bit 4-to-1 multiplexer                             : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <debounce_fsmd_test>.
+The following registers are absorbed into counter <d_reg>: 1 register on signal <d_reg>.
+The following registers are absorbed into counter <b_reg>: 1 register on signal <b_reg>.
+Unit <debounce_fsmd_test> synthesized (advanced).
+
+Synthesizing (advanced) Unit <disp_hex_mux>.
+The following registers are absorbed into counter <q_reg>: 1 register on signal <q_reg>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0034> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 5-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <q_reg>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0051[0:6]> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <hex_in>        |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <disp_hex_mux> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x7-bit single-port distributed Read Only RAM        : 1
+ 4x5-bit single-port distributed Read Only RAM         : 1
+# Adders/Subtractors                                   : 1
+ 21-bit subtractor                                     : 1
+# Counters                                             : 3
+ 18-bit up counter                                     : 1
+ 8-bit up counter                                      : 2
+# Registers                                            : 22
+ Flip-Flops                                            : 22
+# Multiplexers                                         : 11
+ 1-bit 2-to-1 multiplexer                              : 2
+ 1-bit 4-to-1 multiplexer                              : 4
+ 21-bit 2-to-1 multiplexer                             : 4
+ 21-bit 4-to-1 multiplexer                             : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <db_unit/FSM_0> on signal <state_reg[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 11    | 01
+ 10    | 11
+ 01    | 10
+-------------------
+
+Optimizing unit <debounce_fsmd_test> ...
+
+Optimizing unit <debounce> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block debounce_fsmd_test, actual ratio is 1.
+FlipFlop db_unit/state_reg_FSM_FFd2 has been replicated 1 time(s)
+INFO:Xst:1843 - HDL ADVISOR - FlipFlop db_unit/state_reg_FSM_FFd2 connected to a primary input has been replicated
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 59
+ Flip-Flops                                            : 59
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : debounce_fsmd_test.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 224
+#      GND                         : 1
+#      INV                         : 24
+#      LUT1                        : 32
+#      LUT2                        : 5
+#      LUT3                        : 1
+#      LUT4                        : 7
+#      LUT5                        : 31
+#      LUT6                        : 16
+#      MUXCY                       : 51
+#      VCC                         : 1
+#      XORCY                       : 55
+# FlipFlops/Latches                : 59
+#      FD                          : 1
+#      FDC                         : 42
+#      FDRE                        : 16
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 15
+#      IBUF                        : 3
+#      OBUF                        : 12
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              59  out of  18224     0%  
+ Number of Slice LUTs:                  116  out of   9112     1%  
+    Number used as Logic:               116  out of   9112     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    118
+   Number with an unused Flip Flop:      59  out of    118    50%  
+   Number with an unused LUT:             2  out of    118     1%  
+   Number of fully used LUT-FF pairs:    57  out of    118    48%  
+   Number of unique control sets:         4
+
+IO Utilization: 
+ Number of IOs:                          16
+ Number of bonded IOBs:                  16  out of    232     6%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 59    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.206ns (Maximum Frequency: 237.741MHz)
+   Minimum input arrival time before clock: 5.227ns
+   Maximum output required time after clock: 6.217ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.206ns (frequency: 237.741MHz)
+  Total number of paths / destination ports: 2659 / 72
+-------------------------------------------------------------------------
+Delay:               4.206ns (Levels of Logic = 6)
+  Source:            db_unit/q_reg_0 (FF)
+  Destination:       d_reg_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: db_unit/q_reg_0 to d_reg_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.447   0.617  db_unit/q_reg_0 (db_unit/q_reg_0)
+     LUT1:I0->O            1   0.205   0.000  db_unit/Msub__n0040_cy<0>_rt (db_unit/Msub__n0040_cy<0>_rt)
+     MUXCY:S->O            1   0.172   0.000  db_unit/Msub__n0040_cy<0> (db_unit/Msub__n0040_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  db_unit/Msub__n0040_cy<1> (db_unit/Msub__n0040_cy<1>)
+     XORCY:CI->O           2   0.180   0.981  db_unit/Msub__n0040_xor<2> (db_unit/_n0040<18>)
+     LUT6:I0->O            9   0.203   1.077  db_unit/db_tick22 (db_unit/db_tick21)
+     LUT6:I2->O            1   0.203   0.000  d_reg_0_dpot1 (d_reg_0_dpot1)
+     FDRE:D                    0.102          d_reg_0
+    ----------------------------------------
+    Total                      4.206ns (1.531ns logic, 2.675ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 99 / 99
+-------------------------------------------------------------------------
+Offset:              5.227ns (Levels of Logic = 4)
+  Source:            btn<1> (PAD)
+  Destination:       d_reg_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: btn<1> to d_reg_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            27   1.222   1.449  btn_1_IBUF (btn_1_IBUF)
+     LUT3:I0->O            8   0.205   1.031  db_unit/db_tick1_rstpot (db_unit/db_tick1_rstpot)
+     LUT5:I2->O            1   0.205   0.808  db_unit/db_tick1_cepot_rstpot_SW0 (N11)
+     LUT6:I3->O            1   0.205   0.000  d_reg_0_dpot1 (d_reg_0_dpot1)
+     FDRE:D                    0.102          d_reg_0
+    ----------------------------------------
+    Total                      5.227ns (1.939ns logic, 3.288ns route)
+                                       (37.1% logic, 62.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 178 / 12
+-------------------------------------------------------------------------
+Offset:              6.217ns (Levels of Logic = 3)
+  Source:            disp_unit/q_reg_16 (FF)
+  Destination:       sseg<6> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: disp_unit/q_reg_16 to sseg<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              9   0.447   1.194  disp_unit/q_reg_16 (disp_unit/q_reg_16)
+     LUT6:I0->O            7   0.203   1.021  disp_unit/Mmux_hex_in<0>11 (disp_unit/hex_in<0>)
+     LUT4:I0->O            1   0.203   0.579  disp_unit/Mram__n0051[0:6]51 (sseg_5_OBUF)
+     OBUF:I->O                 2.571          sseg_5_OBUF (sseg<5>)
+    ----------------------------------------
+    Total                      6.217ns (3.424ns logic, 2.793ns route)
+                                       (55.1% logic, 44.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.206|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 11.73 secs
+ 
+--> 
+
+Total memory usage is 230056 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Stache\Documents\Xilinx Projects\learning\chapter5\exercises\dualedgedetector
+vcounter
+Z1 !s100 Lh8WH:G>P<FBVHn_[Tzk93
+Z2 I4Ni[XjTiC>DJ1o?bcdM4c1
+Z3 V[n6E>D_^m_WG?aoa7iJne1
+Z4 dC:\Users\Stache\Documents\Xilinx Projects\learning\chapter5\exercises\occupancycounter
+Z5 w1472908828
+Z6 8C:/Users/Stache/Documents/Xilinx Projects/learning/chapter5/exercises/occupancycounter/counter.v
+Z7 FC:/Users/Stache/Documents/Xilinx Projects/learning/chapter5/exercises/occupancycounter/counter.v
+L0 21
+Z8 OV;L;10.1e;51
+r1
+31
+Z9 !s90 -reportprogress|300|-work|work|C:/Users/Stache/Documents/Xilinx Projects/learning/chapter5/exercises/occupancycounter/counter.v|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1472909476.416000
+Z12 !s107 C:/Users/Stache/Documents/Xilinx Projects/learning/chapter5/exercises/occupancycounter/counter.v|
+!s101 -O0
+vcounter_tb
+!i10b 1
+!s100 4B2z7QCBazfaNj3<kdhIT1
+I;_4SCE6oSj^MihAHhz30K3
+Z13 VN6X[[7nWg]oz4[ZCKXDXe0
+R4
+w1472909457
+Z14 8C:/Users/Stache/Documents/Xilinx Projects/learning/chapter5/exercises/occupancycounter/counter_tb.v
+Z15 FC:/Users/Stache/Documents/Xilinx Projects/learning/chapter5/exercises/occupancycounter/counter_tb.v
+L0 25
+R8
+r1
+!s85 0
+31
+!s108 1472909476.666000
+!s107 C:/Users/Stache/Documents/Xilinx Projects/learning/chapter5/exercises/occupancycounter/counter_tb.v|
+Z16 !s90 -reportprogress|300|-work|work|C:/Users/Stache/Documents/Xilinx Projects/learning/chapter5/exercises/occupancycounter/counter_tb.v|
+!s101 -O0
+R10
+voccupancy_counter
+Z17 IUCK@HChg<QgJGiokkQ=b>2
+Z18 VHYadJEA0KG:N1WgDfPTln3
+R4
+Z19 w1472828399
+Z20 8C:/Users/Stache/Documents/Xilinx Projects/learning/chapter5/exercises/occupancycounter/occupancy_counter.v
+Z21 FC:/Users/Stache/Documents/Xilinx Projects/learning/chapter5/exercises/occupancycounter/occupancy_counter.v
+L0 21
+R8
+r1
+31
+Z22 !s90 -reportprogress|300|-work|work|C:/Users/Stache/Documents/Xilinx Projects/learning/chapter5/exercises/occupancycounter/occupancy_counter.v|
+R10
+Z23 !s100 Ef]J6eUTo:N38EfHG3ib>1
+Z24 !s108 1472828445.521000
+Z25 !s107 C:/Users/Stache/Documents/Xilinx Projects/learning/chapter5/exercises/occupancycounter/occupancy_counter.v|
+!i10b 1
+!s85 0
+!s101 -O0
+voccupancy_counter_tb
+Z26 !s100 A5AP50[[[PdG[7Hgig^Ue0
+Z27 IZe;5JkC_d5HJllR2==59:2
+Z28 VKm?<i]H5PLYZg7Iekekhe3
+R4
+Z29 w1472824806
+Z30 8C:/Users/Stache/Documents/Xilinx Projects/learning/chapter5/exercises/occupancycounter/occupancy_counter_tb.v
+Z31 FC:/Users/Stache/Documents/Xilinx Projects/learning/chapter5/exercises/occupancycounter/occupancy_counter_tb.v
+L0 25
+R8
+r1
+31
+Z32 !s90 -reportprogress|300|-work|work|C:/Users/Stache/Documents/Xilinx Projects/learning/chapter5/exercises/occupancycounter/occupancy_counter_tb.v|
+R10
+Z33 !s108 1472828445.788000
+Z34 !s107 C:/Users/Stache/Documents/Xilinx Projects/learning/chapter5/exercises/occupancycounter/occupancy_counter_tb.v|
+!i10b 1
+!s85 0
+!s101 -O0

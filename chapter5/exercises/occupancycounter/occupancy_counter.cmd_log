@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter5/exercises/occupancycounter/occupancy_counter.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter5/exercises/occupancycounter/occupancy_counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter5/exercises/occupancycounter/occupancy_counter.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter5/exercises/occupancycounter/occupancy_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "occupancy_counter.ngc" occupancy_counter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o occupancy_counter_map.ncd occupancy_counter.ngd occupancy_counter.pcf 
+par -w -intstyle ise -ol high -mt off occupancy_counter_map.ncd occupancy_counter.ncd occupancy_counter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml occupancy_counter.twx occupancy_counter.ncd -o occupancy_counter.twr occupancy_counter.pcf -ucf Nexys3_master.ucf 

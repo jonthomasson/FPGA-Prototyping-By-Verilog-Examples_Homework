@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<DeviceUsageSummary rev="1">
+<DesignStatistics TimeStamp="Sun Aug 28 12:26:58 2016"><group name="MiscellaneousStatistics">
+<item name="AGG_BONDED_IO" rev="1">
+<attrib name="value" value="16"/></item>
+<item name="AGG_IO" rev="1">
+<attrib name="value" value="16"/></item>
+<item name="AGG_LOCED_IO" rev="1">
+<attrib name="value" value="16"/></item>
+<item name="AGG_SLICE" rev="1">
+<attrib name="value" value="26"/></item>
+<item name="NUM_BONDED_IOB" rev="1">
+<attrib name="value" value="16"/></item>
+<item name="NUM_BSFULL" rev="1">
+<attrib name="value" value="58"/></item>
+<item name="NUM_BSLUTONLY" rev="1">
+<attrib name="value" value="18"/></item>
+<item name="NUM_BSUSED" rev="1">
+<attrib name="value" value="76"/></item>
+<item name="NUM_BUFG" rev="1">
+<attrib name="value" value="1"/></item>
+<item name="NUM_LOCED_IOB" rev="1">
+<attrib name="value" value="16"/></item>
+<item name="NUM_LOGIC_O5ANDO6" rev="1">
+<attrib name="value" value="9"/></item>
+<item name="NUM_LOGIC_O5ONLY" rev="1">
+<attrib name="value" value="45"/></item>
+<item name="NUM_LOGIC_O6ONLY" rev="1">
+<attrib name="value" value="18"/></item>
+<item name="NUM_LUT_RT_DRIVES_CARRY4" rev="1">
+<attrib name="value" value="4"/></item>
+<item name="NUM_LUT_RT_EXO6" rev="1">
+<attrib name="value" value="4"/></item>
+<item name="NUM_LUT_RT_O6" rev="1">
+<attrib name="value" value="45"/></item>
+<item name="NUM_SLICEL" rev="1">
+<attrib name="value" value="14"/></item>
+<item name="NUM_SLICEX" rev="1">
+<attrib name="value" value="12"/></item>
+<item name="NUM_SLICE_CARRY4" rev="1">
+<attrib name="value" value="14"/></item>
+<item name="NUM_SLICE_CONTROLSET" rev="1">
+<attrib name="value" value="4"/></item>
+<item name="NUM_SLICE_CYINIT" rev="1">
+<attrib name="value" value="134"/></item>
+<item name="NUM_SLICE_FF" rev="1">
+<attrib name="value" value="58"/></item>
+<item name="NUM_SLICE_UNUSEDCTRL" rev="1">
+<attrib name="value" value="8"/></item>
+<item name="NUM_UNUSABLE_FF_BELS" rev="1">
+<attrib name="value" value="6"/></item>
+</group>
+</DesignStatistics>
+<CmdHistory>
+</CmdHistory>
+</DeviceUsageSummary>

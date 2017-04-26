@@ -1,0 +1,85 @@
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/square_wave_generator/square_wave_test.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/square_wave_generator/square_wave_test.syr" 
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/square_wave_generator/square_wave_test.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/square_wave_generator/square_wave_test.syr" 
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/square_wave_generator/square_wave_test.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/square_wave_generator/square_wave_test.syr" 
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/square_wave_generator/square_wave_test.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/square_wave_generator/square_wave_test.syr" 
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/square_wave_generator/square_wave_test.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/square_wave_generator/square_wave_test.syr" 
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/square_wave_generator/square_wave_test.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/square_wave_generator/square_wave_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "square_wave_test.ngc" square_wave_test.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "square_wave_test.ngc" square_wave_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o square_wave_test_map.ncd square_wave_test.ngd square_wave_test.pcf 
+par -w -intstyle ise -ol high -mt off square_wave_test_map.ncd square_wave_test.ncd square_wave_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml square_wave_test.twx square_wave_test.ncd -o square_wave_test.twr square_wave_test.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f square_wave_test.ut square_wave_test.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "square_wave_test.ngc" square_wave_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o square_wave_test_map.ncd square_wave_test.ngd square_wave_test.pcf 
+par -w -intstyle ise -ol high -mt off square_wave_test_map.ncd square_wave_test.ncd square_wave_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml square_wave_test.twx square_wave_test.ncd -o square_wave_test.twr square_wave_test.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f square_wave_test.ut square_wave_test.ncd 
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/square_wave_generator/square_wave_test.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/square_wave_generator/square_wave_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "square_wave_test.ngc" square_wave_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o square_wave_test_map.ncd square_wave_test.ngd square_wave_test.pcf 
+par -w -intstyle ise -ol high -mt off square_wave_test_map.ncd square_wave_test.ncd square_wave_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml square_wave_test.twx square_wave_test.ncd -o square_wave_test.twr square_wave_test.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f square_wave_test.ut square_wave_test.ncd 
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/square_wave_generator/square_wave_test.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/square_wave_generator/square_wave_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "square_wave_test.ngc" square_wave_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o square_wave_test_map.ncd square_wave_test.ngd square_wave_test.pcf 
+par -w -intstyle ise -ol high -mt off square_wave_test_map.ncd square_wave_test.ncd square_wave_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml square_wave_test.twx square_wave_test.ncd -o square_wave_test.twr square_wave_test.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f square_wave_test.ut square_wave_test.ncd 
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/square_wave_generator/square_wave_test.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/square_wave_generator/square_wave_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "square_wave_test.ngc" square_wave_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o square_wave_test_map.ncd square_wave_test.ngd square_wave_test.pcf 
+par -w -intstyle ise -ol high -mt off square_wave_test_map.ncd square_wave_test.ncd square_wave_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml square_wave_test.twx square_wave_test.ncd -o square_wave_test.twr square_wave_test.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f square_wave_test.ut square_wave_test.ncd 
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/square_wave_generator/square_wave_test.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/square_wave_generator/square_wave_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "square_wave_test.ngc" square_wave_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o square_wave_test_map.ncd square_wave_test.ngd square_wave_test.pcf 
+par -w -intstyle ise -ol high -mt off square_wave_test_map.ncd square_wave_test.ncd square_wave_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml square_wave_test.twx square_wave_test.ncd -o square_wave_test.twr square_wave_test.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f square_wave_test.ut square_wave_test.ncd 
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/square_wave_generator/square_wave_test.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/square_wave_generator/square_wave_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "square_wave_test.ngc" square_wave_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o square_wave_test_map.ncd square_wave_test.ngd square_wave_test.pcf 
+par -w -intstyle ise -ol high -mt off square_wave_test_map.ncd square_wave_test.ncd square_wave_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml square_wave_test.twx square_wave_test.ncd -o square_wave_test.twr square_wave_test.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f square_wave_test.ut square_wave_test.ncd 
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/square_wave_generator/square_wave_test.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/square_wave_generator/square_wave_test.syr" 
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/square_wave_generator/square_wave_test.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/square_wave_generator/square_wave_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "square_wave_test.ngc" square_wave_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o square_wave_test_map.ncd square_wave_test.ngd square_wave_test.pcf 
+par -w -intstyle ise -ol high -mt off square_wave_test_map.ncd square_wave_test.ncd square_wave_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml square_wave_test.twx square_wave_test.ncd -o square_wave_test.twr square_wave_test.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f square_wave_test.ut square_wave_test.ncd 
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/square_wave_generator/square_wave_test.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/square_wave_generator/square_wave_test.syr" 
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/square_wave_generator/square_wave_test.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/square_wave_generator/square_wave_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "square_wave_test.ngc" square_wave_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o square_wave_test_map.ncd square_wave_test.ngd square_wave_test.pcf 
+par -w -intstyle ise -ol high -mt off square_wave_test_map.ncd square_wave_test.ncd square_wave_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml square_wave_test.twx square_wave_test.ncd -o square_wave_test.twr square_wave_test.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f square_wave_test.ut square_wave_test.ncd 
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/square_wave_generator/square_wave_test.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/square_wave_generator/square_wave_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "square_wave_test.ngc" square_wave_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o square_wave_test_map.ncd square_wave_test.ngd square_wave_test.pcf 
+par -w -intstyle ise -ol high -mt off square_wave_test_map.ncd square_wave_test.ncd square_wave_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml square_wave_test.twx square_wave_test.ncd -o square_wave_test.twr square_wave_test.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f square_wave_test.ut square_wave_test.ncd 
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/square_wave_generator/square_wave_test.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/square_wave_generator/square_wave_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "square_wave_test.ngc" square_wave_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o square_wave_test_map.ncd square_wave_test.ngd square_wave_test.pcf 
+par -w -intstyle ise -ol high -mt off square_wave_test_map.ncd square_wave_test.ncd square_wave_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml square_wave_test.twx square_wave_test.ncd -o square_wave_test.twr square_wave_test.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f square_wave_test.ut square_wave_test.ncd 
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/square_wave_generator/square_wave_test.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/square_wave_generator/square_wave_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "square_wave_test.ngc" square_wave_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o square_wave_test_map.ncd square_wave_test.ngd square_wave_test.pcf 
+par -w -intstyle ise -ol high -mt off square_wave_test_map.ncd square_wave_test.ncd square_wave_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml square_wave_test.twx square_wave_test.ncd -o square_wave_test.twr square_wave_test.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f square_wave_test.ut square_wave_test.ncd 
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/square_wave_generator/square_wave_test.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/square_wave_generator/square_wave_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "square_wave_test.ngc" square_wave_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o square_wave_test_map.ncd square_wave_test.ngd square_wave_test.pcf 
+par -w -intstyle ise -ol high -mt off square_wave_test_map.ncd square_wave_test.ncd square_wave_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml square_wave_test.twx square_wave_test.ncd -o square_wave_test.twr square_wave_test.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f square_wave_test.ut square_wave_test.ncd 

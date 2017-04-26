@@ -1,0 +1,8 @@
+Release 14.7 Drc P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Tue Aug 16 07:08:41 2016
+
+drc -z shifter_test.ncd shifter_test.pcf
+
+DRC detected 0 errors and 0 warnings.

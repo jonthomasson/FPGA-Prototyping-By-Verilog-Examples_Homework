@@ -1,0 +1,2 @@
+verilog work "square_wave.v"
+verilog work "square_wave_test.v"

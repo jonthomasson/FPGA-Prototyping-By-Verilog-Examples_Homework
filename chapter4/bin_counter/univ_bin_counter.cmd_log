@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/bin_counter/univ_bin_counter.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/bin_counter/univ_bin_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "univ_bin_counter.ngc" univ_bin_counter.ngd  

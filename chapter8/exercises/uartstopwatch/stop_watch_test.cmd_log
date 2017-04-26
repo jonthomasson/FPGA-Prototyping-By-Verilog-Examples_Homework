@@ -1,0 +1,25 @@
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter8/exercises/uartstopwatch/stop_watch_test.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter8/exercises/uartstopwatch/stop_watch_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "stop_watch_test.ngc" stop_watch_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o stop_watch_test_map.ncd stop_watch_test.ngd stop_watch_test.pcf 
+par -w -intstyle ise -ol high -mt off stop_watch_test_map.ncd stop_watch_test.ncd stop_watch_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml stop_watch_test.twx stop_watch_test.ncd -o stop_watch_test.twr stop_watch_test.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f stop_watch_test.ut stop_watch_test.ncd 
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter8/exercises/uartstopwatch/stop_watch_test.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter8/exercises/uartstopwatch/stop_watch_test.syr" 
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter8/exercises/uartstopwatch/stop_watch_test.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter8/exercises/uartstopwatch/stop_watch_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "stop_watch_test.ngc" stop_watch_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o stop_watch_test_map.ncd stop_watch_test.ngd stop_watch_test.pcf 
+par -w -intstyle ise -ol high -mt off stop_watch_test_map.ncd stop_watch_test.ncd stop_watch_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml stop_watch_test.twx stop_watch_test.ncd -o stop_watch_test.twr stop_watch_test.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f stop_watch_test.ut stop_watch_test.ncd 
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter8/exercises/uartstopwatch/stop_watch_test.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter8/exercises/uartstopwatch/stop_watch_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "stop_watch_test.ngc" stop_watch_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o stop_watch_test_map.ncd stop_watch_test.ngd stop_watch_test.pcf 
+par -w -intstyle ise -ol high -mt off stop_watch_test_map.ncd stop_watch_test.ncd stop_watch_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml stop_watch_test.twx stop_watch_test.ncd -o stop_watch_test.twr stop_watch_test.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f stop_watch_test.ut stop_watch_test.ncd 
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter8/exercises/uartstopwatch/stop_watch_test.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter8/exercises/uartstopwatch/stop_watch_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "stop_watch_test.ngc" stop_watch_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o stop_watch_test_map.ncd stop_watch_test.ngd stop_watch_test.pcf 
+par -w -intstyle ise -ol high -mt off stop_watch_test_map.ncd stop_watch_test.ncd stop_watch_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml stop_watch_test.twx stop_watch_test.ncd -o stop_watch_test.twr stop_watch_test.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f stop_watch_test.ut stop_watch_test.ncd 

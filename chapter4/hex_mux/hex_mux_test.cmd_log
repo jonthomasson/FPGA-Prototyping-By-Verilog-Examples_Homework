@@ -1,0 +1,14 @@
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/hex_mux/hex_mux_test.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/hex_mux/hex_mux_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "hex_mux_test.ngc" hex_mux_test.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "hex_mux_test.ngc" hex_mux_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o hex_mux_test_map.ncd hex_mux_test.ngd hex_mux_test.pcf 
+par -w -intstyle ise -ol high -mt off hex_mux_test_map.ncd hex_mux_test.ncd hex_mux_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml hex_mux_test.twx hex_mux_test.ncd -o hex_mux_test.twr hex_mux_test.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f hex_mux_test.ut hex_mux_test.ncd 
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/hex_mux/hex_mux_test.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/hex_mux/hex_mux_test.syr" 
+xst -intstyle ise -ifn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/hex_mux/hex_mux_test.xst" -ofn "C:/Users/Stache/Documents/Xilinx Projects/learning/chapter4/hex_mux/hex_mux_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 "hex_mux_test.ngc" hex_mux_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o hex_mux_test_map.ncd hex_mux_test.ngd hex_mux_test.pcf 
+par -w -intstyle ise -ol high -mt off hex_mux_test_map.ncd hex_mux_test.ncd hex_mux_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml hex_mux_test.twx hex_mux_test.ncd -o hex_mux_test.twr hex_mux_test.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f hex_mux_test.ut hex_mux_test.ncd 

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="1989" delta="new" >Unit &lt;<arg fmt="%s" index="1">pwm_led_test</arg>&gt;: instances &lt;<arg fmt="%s" index="2">test_led</arg>&gt;, &lt;<arg fmt="%s" index="3">test_led0</arg>&gt; of unit &lt;<arg fmt="%s" index="4">pwm_led</arg>&gt; are equivalent, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="1989" delta="new" >Unit &lt;<arg fmt="%s" index="1">pwm_led_test</arg>&gt;: instances &lt;<arg fmt="%s" index="2">test_led</arg>&gt;, &lt;<arg fmt="%s" index="3">test_led1</arg>&gt; of unit &lt;<arg fmt="%s" index="4">pwm_led</arg>&gt; are equivalent, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="1989" delta="new" >Unit &lt;<arg fmt="%s" index="1">pwm_led_test</arg>&gt;: instances &lt;<arg fmt="%s" index="2">test_led</arg>&gt;, &lt;<arg fmt="%s" index="3">test_led2</arg>&gt; of unit &lt;<arg fmt="%s" index="4">pwm_led</arg>&gt; are equivalent, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="1989" delta="new" >Unit &lt;<arg fmt="%s" index="1">pwm_led_test</arg>&gt;: instances &lt;<arg fmt="%s" index="2">test_led</arg>&gt;, &lt;<arg fmt="%s" index="3">test_led3</arg>&gt; of unit &lt;<arg fmt="%s" index="4">pwm_led</arg>&gt; are equivalent, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="1989" delta="new" >Unit &lt;<arg fmt="%s" index="1">pwm_led_test</arg>&gt;: instances &lt;<arg fmt="%s" index="2">test_led</arg>&gt;, &lt;<arg fmt="%s" index="3">test_led4</arg>&gt; of unit &lt;<arg fmt="%s" index="4">pwm_led</arg>&gt; are equivalent, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="1989" delta="new" >Unit &lt;<arg fmt="%s" index="1">pwm_led_test</arg>&gt;: instances &lt;<arg fmt="%s" index="2">test_led</arg>&gt;, &lt;<arg fmt="%s" index="3">test_led5</arg>&gt; of unit &lt;<arg fmt="%s" index="4">pwm_led</arg>&gt; are equivalent, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="1989" delta="new" >Unit &lt;<arg fmt="%s" index="1">pwm_led_test</arg>&gt;: instances &lt;<arg fmt="%s" index="2">test_led</arg>&gt;, &lt;<arg fmt="%s" index="3">test_led6</arg>&gt; of unit &lt;<arg fmt="%s" index="4">pwm_led</arg>&gt; are equivalent, second instance is removed
+</msg>
+
+</messages>
+

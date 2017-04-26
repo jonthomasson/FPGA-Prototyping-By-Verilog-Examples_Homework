@@ -1,0 +1,148 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Users\Stache\Documents\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe
+-intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml shifter_test.twx shifter_test.ncd
+-o shifter_test.twr shifter_test.pcf -ucf Nexys3_master.ucf
+
+Design file:              shifter_test.ncd
+Physical constraint file: shifter_test.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+btn<0>         |led<0>         |   12.642|
+btn<0>         |led<1>         |   12.460|
+btn<0>         |led<2>         |   12.318|
+btn<0>         |led<3>         |   12.325|
+btn<0>         |led<4>         |   11.962|
+btn<0>         |led<5>         |   12.056|
+btn<0>         |led<6>         |   11.982|
+btn<0>         |led<7>         |   12.195|
+btn<1>         |led<0>         |   13.045|
+btn<1>         |led<1>         |   12.225|
+btn<1>         |led<2>         |   12.485|
+btn<1>         |led<3>         |   12.305|
+btn<1>         |led<4>         |   12.398|
+btn<1>         |led<5>         |   12.210|
+btn<1>         |led<6>         |   11.919|
+btn<1>         |led<7>         |   12.206|
+btn<2>         |led<0>         |   13.981|
+btn<2>         |led<1>         |   13.376|
+btn<2>         |led<2>         |   13.936|
+btn<2>         |led<3>         |   13.488|
+btn<2>         |led<4>         |   13.334|
+btn<2>         |led<5>         |   13.346|
+btn<2>         |led<6>         |   13.149|
+btn<2>         |led<7>         |   12.996|
+btnlr          |led<0>         |   13.536|
+btnlr          |led<1>         |   13.062|
+btnlr          |led<2>         |   13.163|
+btnlr          |led<3>         |   12.558|
+btnlr          |led<4>         |   12.596|
+btnlr          |led<5>         |   12.681|
+btnlr          |led<6>         |   12.431|
+btnlr          |led<7>         |   12.459|
+sw<0>          |led<0>         |   11.467|
+sw<0>          |led<1>         |    9.837|
+sw<0>          |led<2>         |   10.848|
+sw<0>          |led<3>         |   10.609|
+sw<0>          |led<4>         |   10.820|
+sw<0>          |led<5>         |    9.440|
+sw<0>          |led<6>         |   10.116|
+sw<0>          |led<7>         |   10.506|
+sw<1>          |led<0>         |   11.210|
+sw<1>          |led<1>         |   10.258|
+sw<1>          |led<2>         |   10.939|
+sw<1>          |led<3>         |   10.453|
+sw<1>          |led<4>         |   10.686|
+sw<1>          |led<5>         |   10.698|
+sw<1>          |led<6>         |   10.266|
+sw<1>          |led<7>         |   10.150|
+sw<2>          |led<0>         |   11.669|
+sw<2>          |led<1>         |    9.897|
+sw<2>          |led<2>         |   11.339|
+sw<2>          |led<3>         |   10.011|
+sw<2>          |led<4>         |   10.729|
+sw<2>          |led<5>         |   10.018|
+sw<2>          |led<6>         |   10.496|
+sw<2>          |led<7>         |   10.161|
+sw<3>          |led<0>         |   10.657|
+sw<3>          |led<1>         |   10.344|
+sw<3>          |led<2>         |   10.796|
+sw<3>          |led<3>         |   11.061|
+sw<3>          |led<4>         |   10.622|
+sw<3>          |led<5>         |   10.174|
+sw<3>          |led<6>         |    9.857|
+sw<3>          |led<7>         |   11.014|
+sw<4>          |led<0>         |   11.698|
+sw<4>          |led<1>         |   10.146|
+sw<4>          |led<2>         |   11.296|
+sw<4>          |led<3>         |    9.968|
+sw<4>          |led<4>         |   11.051|
+sw<4>          |led<5>         |   10.321|
+sw<4>          |led<6>         |   10.564|
+sw<4>          |led<7>         |   10.147|
+sw<5>          |led<0>         |   10.671|
+sw<5>          |led<1>         |   10.417|
+sw<5>          |led<2>         |   11.079|
+sw<5>          |led<3>         |   10.286|
+sw<5>          |led<4>         |   10.614|
+sw<5>          |led<5>         |   10.228|
+sw<5>          |led<6>         |   10.588|
+sw<5>          |led<7>         |   10.187|
+sw<6>          |led<0>         |   11.437|
+sw<6>          |led<1>         |   10.359|
+sw<6>          |led<2>         |   11.330|
+sw<6>          |led<3>         |   10.232|
+sw<6>          |led<4>         |   10.497|
+sw<6>          |led<5>         |    9.869|
+sw<6>          |led<6>         |   10.412|
+sw<6>          |led<7>         |   10.373|
+sw<7>          |led<0>         |   11.675|
+sw<7>          |led<1>         |   11.047|
+sw<7>          |led<2>         |   11.405|
+sw<7>          |led<3>         |   10.659|
+sw<7>          |led<4>         |   11.170|
+sw<7>          |led<5>         |   10.666|
+sw<7>          |led<6>         |   10.278|
+sw<7>          |led<7>         |   10.612|
+---------------+---------------+---------+
+
+
+Analysis completed Tue Aug 16 07:08:30 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 182 MB
+
+
+

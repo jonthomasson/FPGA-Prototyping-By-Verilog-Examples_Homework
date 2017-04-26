@@ -1,0 +1,5 @@
+verilog work "list_ch12_04_xilinx_dual_port_ram_sync.v"
+verilog work "list_ch06_02_debounce.v"
+verilog work "list_ch13_07_bitmap_gen.v"
+verilog work "list_ch13_01_vga_sync.v"
+verilog work "list_ch13_08_dot_top.v"

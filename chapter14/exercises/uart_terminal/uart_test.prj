@@ -1,0 +1,8 @@
+verilog work "list_ch14_01_font_rom.v"
+verilog work "list_ch12_04_xilinx_dual_port_ram_sync.v"
+verilog work "list_ch08_01_uart_rx.v"
+verilog work "list_ch04_11_mod_m_counter.v"
+verilog work "list_ch14_04_text_screen_gen.v"
+verilog work "list_ch13_01_vga_sync.v"
+verilog work "list_ch08_04_uart.v"
+verilog work "list_ch08_05_uart_test.v"

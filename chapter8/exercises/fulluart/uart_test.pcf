@@ -1,0 +1,43 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sat Sep 24 06:47:29 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "an<0>" LOCATE = SITE "N16" LEVEL 1;
+COMP "an<1>" LOCATE = SITE "N15" LEVEL 1;
+COMP "an<2>" LOCATE = SITE "P18" LEVEL 1;
+COMP "led<0>" LOCATE = SITE "U16" LEVEL 1;
+COMP "an<3>" LOCATE = SITE "P17" LEVEL 1;
+COMP "btn<0>" LOCATE = SITE "B8" LEVEL 1;
+COMP "btn<1>" LOCATE = SITE "A8" LEVEL 1;
+COMP "led<1>" LOCATE = SITE "V16" LEVEL 1;
+COMP "btn<2>" LOCATE = SITE "C4" LEVEL 1;
+COMP "led<2>" LOCATE = SITE "U15" LEVEL 1;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "led<3>" LOCATE = SITE "V15" LEVEL 1;
+COMP "led<4>" LOCATE = SITE "M11" LEVEL 1;
+COMP "led<5>" LOCATE = SITE "N11" LEVEL 1;
+COMP "led<6>" LOCATE = SITE "R11" LEVEL 1;
+COMP "sw0dbit" LOCATE = SITE "T10" LEVEL 1;
+COMP "led<7>" LOCATE = SITE "T11" LEVEL 1;
+COMP "sseg<0>" LOCATE = SITE "T17" LEVEL 1;
+COMP "swparity<0>" LOCATE = SITE "N8" LEVEL 1;
+COMP "sseg<1>" LOCATE = SITE "T18" LEVEL 1;
+COMP "swparity<1>" LOCATE = SITE "U8" LEVEL 1;
+COMP "sseg<2>" LOCATE = SITE "U17" LEVEL 1;
+COMP "rx" LOCATE = SITE "N17" LEVEL 1;
+COMP "sseg<3>" LOCATE = SITE "U18" LEVEL 1;
+COMP "tx" LOCATE = SITE "N18" LEVEL 1;
+COMP "sseg<4>" LOCATE = SITE "M14" LEVEL 1;
+COMP "sseg<5>" LOCATE = SITE "N14" LEVEL 1;
+COMP "sseg<6>" LOCATE = SITE "L14" LEVEL 1;
+COMP "swbaud<0>" LOCATE = SITE "V9" LEVEL 1;
+COMP "sseg<7>" LOCATE = SITE "M13" LEVEL 1;
+COMP "swbaud<1>" LOCATE = SITE "M8" LEVEL 1;
+COMP "sw1sbit" LOCATE = SITE "T9" LEVEL 1;
+COMP "reset" LOCATE = SITE "C9" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "curr_error_0" BEL "curr_error_1" BEL "curr_error_2"
+        BEL "master_clk" BEL "clk_BUFGP/BUFG";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+SCHEMATIC END;
+

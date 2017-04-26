@@ -1,0 +1,3 @@
+verilog work "disp_mux.v"
+verilog work "bcd_to_sseg.v"
+verilog work "list_ch03_15_hex_to_sseg_test.v"

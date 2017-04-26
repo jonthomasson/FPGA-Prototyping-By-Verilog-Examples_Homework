@@ -1,0 +1,4 @@
+verilog work "list_ch14_01_font_rom.v"
+verilog work "list_ch14_02_font_test_gen.v"
+verilog work "list_ch13_01_vga_sync.v"
+verilog work "list_ch14_03_font_test_top.v"

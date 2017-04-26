@@ -1,0 +1,5 @@
+verilog work "occupancy_counter.v"
+verilog work "disp_hex_mux.v"
+verilog work "db_fsm.v"
+verilog work "counter.v"
+verilog work "occupancy_counter_test.v"

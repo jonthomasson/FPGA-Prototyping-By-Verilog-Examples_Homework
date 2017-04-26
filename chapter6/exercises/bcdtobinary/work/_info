@@ -1,0 +1,43 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Stache\Documents\Xilinx Projects\learning\chapter5\exercises\occupancycounter
+vbcd2bin
+Z1 !s100 PhiR]zSS=8M<zDZR_AeE93
+Z2 IS4:e4G<K9nXMchOco1[`Q2
+Z3 V<@`[NjBnB[jUSSg;m1WVj3
+Z4 dC:\Users\Stache\Documents\Xilinx Projects\learning\chapter6\exercises\bcdtobinary
+Z5 w1473601517
+Z6 8C:/Users/Stache/Documents/Xilinx Projects/learning/chapter6/exercises/bcdtobinary/bcd2bin.v
+Z7 FC:/Users/Stache/Documents/Xilinx Projects/learning/chapter6/exercises/bcdtobinary/bcd2bin.v
+L0 21
+Z8 OV;L;10.1e;51
+r1
+31
+Z9 !s90 -reportprogress|300|-work|work|C:/Users/Stache/Documents/Xilinx Projects/learning/chapter6/exercises/bcdtobinary/bcd2bin.v|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1473625431.043000
+Z12 !s107 C:/Users/Stache/Documents/Xilinx Projects/learning/chapter6/exercises/bcdtobinary/bcd2bin.v|
+!s101 -O0
+vbcd2bin_tb
+!i10b 1
+!s100 g<S[B?HROaZFbA0?YYDQ`3
+I?5hRJlLjEIF<]gZLlF_Ph2
+Z13 V31PcRPMAXGjkE=E>B>8]a2
+R4
+w1473625406
+Z14 8C:/Users/Stache/Documents/Xilinx Projects/learning/chapter6/exercises/bcdtobinary/bcd2bin_tb.v
+Z15 FC:/Users/Stache/Documents/Xilinx Projects/learning/chapter6/exercises/bcdtobinary/bcd2bin_tb.v
+L0 25
+R8
+r1
+!s85 0
+31
+!s108 1473625431.256000
+!s107 C:/Users/Stache/Documents/Xilinx Projects/learning/chapter6/exercises/bcdtobinary/bcd2bin_tb.v|
+Z16 !s90 -reportprogress|300|-work|work|C:/Users/Stache/Documents/Xilinx Projects/learning/chapter6/exercises/bcdtobinary/bcd2bin_tb.v|
+!s101 -O0
+R10

@@ -1,0 +1,437 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Users\Stache\Documents\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe
+-intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml pwm_led_test.twx pwm_led_test.ncd
+-o pwm_led_test.twr pwm_led_test.pcf -ucf Nexys3_master.ucf
+
+Design file:              pwm_led_test.ncd
+Physical constraint file: pwm_led_test.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 
+50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 14 paths analyzed, 10 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   1.961ns.
+--------------------------------------------------------------------------------
+
+Paths for end point test_led/PWM_3 (SLICE_X18Y5.C6), 3 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     8.039ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               test_led/PWM_1 (FF)
+  Destination:          test_led/PWM_3 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      1.926ns (Levels of Logic = 2)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: test_led/PWM_1 to test_led/PWM_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X18Y5.AMUX     Tshcko                0.488   test_led/PWM<3>
+                                                       test_led/PWM_1
+    SLICE_X18Y4.D2       net (fanout=3)        0.662   test_led/PWM<1>
+    SLICE_X18Y4.D        Tilo                  0.203   test_led/PWM<4>
+                                                       test_led/Madd_n0006_cy<2>11
+    SLICE_X18Y5.C6       net (fanout=2)        0.284   test_led/Madd_n0006_cy<2>
+    SLICE_X18Y5.CLK      Tas                   0.289   test_led/PWM<3>
+                                                       test_led/Madd_n0006_xor<3>11
+                                                       test_led/PWM_3
+    -------------------------------------------------  ---------------------------
+    Total                                      1.926ns (0.980ns logic, 0.946ns route)
+                                                       (50.9% logic, 49.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     8.374ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               test_led/PWM_0 (FF)
+  Destination:          test_led/PWM_3 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      1.591ns (Levels of Logic = 2)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: test_led/PWM_0 to test_led/PWM_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X18Y5.AQ       Tcko                  0.447   test_led/PWM<3>
+                                                       test_led/PWM_0
+    SLICE_X18Y4.D5       net (fanout=3)        0.368   test_led/PWM<0>
+    SLICE_X18Y4.D        Tilo                  0.203   test_led/PWM<4>
+                                                       test_led/Madd_n0006_cy<2>11
+    SLICE_X18Y5.C6       net (fanout=2)        0.284   test_led/Madd_n0006_cy<2>
+    SLICE_X18Y5.CLK      Tas                   0.289   test_led/PWM<3>
+                                                       test_led/Madd_n0006_xor<3>11
+                                                       test_led/PWM_3
+    -------------------------------------------------  ---------------------------
+    Total                                      1.591ns (0.939ns logic, 0.652ns route)
+                                                       (59.0% logic, 41.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     8.457ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               test_led/PWM_2 (FF)
+  Destination:          test_led/PWM_3 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      1.508ns (Levels of Logic = 2)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: test_led/PWM_2 to test_led/PWM_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X18Y5.BQ       Tcko                  0.447   test_led/PWM<3>
+                                                       test_led/PWM_2
+    SLICE_X18Y4.D6       net (fanout=2)        0.285   test_led/PWM<2>
+    SLICE_X18Y4.D        Tilo                  0.203   test_led/PWM<4>
+                                                       test_led/Madd_n0006_cy<2>11
+    SLICE_X18Y5.C6       net (fanout=2)        0.284   test_led/Madd_n0006_cy<2>
+    SLICE_X18Y5.CLK      Tas                   0.289   test_led/PWM<3>
+                                                       test_led/Madd_n0006_xor<3>11
+                                                       test_led/PWM_3
+    -------------------------------------------------  ---------------------------
+    Total                                      1.508ns (0.939ns logic, 0.569ns route)
+                                                       (62.3% logic, 37.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point test_led/PWM_4 (SLICE_X18Y4.C6), 3 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     8.193ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               test_led/PWM_1 (FF)
+  Destination:          test_led/PWM_4 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      1.765ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.007ns (0.149 - 0.156)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: test_led/PWM_1 to test_led/PWM_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X18Y5.AMUX     Tshcko                0.488   test_led/PWM<3>
+                                                       test_led/PWM_1
+    SLICE_X18Y4.D2       net (fanout=3)        0.662   test_led/PWM<1>
+    SLICE_X18Y4.D        Tilo                  0.203   test_led/PWM<4>
+                                                       test_led/Madd_n0006_cy<2>11
+    SLICE_X18Y4.C6       net (fanout=2)        0.123   test_led/Madd_n0006_cy<2>
+    SLICE_X18Y4.CLK      Tas                   0.289   test_led/PWM<4>
+                                                       test_led/Madd_n0006_cy<3>11
+                                                       test_led/PWM_4
+    -------------------------------------------------  ---------------------------
+    Total                                      1.765ns (0.980ns logic, 0.785ns route)
+                                                       (55.5% logic, 44.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     8.528ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               test_led/PWM_0 (FF)
+  Destination:          test_led/PWM_4 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      1.430ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.007ns (0.149 - 0.156)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: test_led/PWM_0 to test_led/PWM_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X18Y5.AQ       Tcko                  0.447   test_led/PWM<3>
+                                                       test_led/PWM_0
+    SLICE_X18Y4.D5       net (fanout=3)        0.368   test_led/PWM<0>
+    SLICE_X18Y4.D        Tilo                  0.203   test_led/PWM<4>
+                                                       test_led/Madd_n0006_cy<2>11
+    SLICE_X18Y4.C6       net (fanout=2)        0.123   test_led/Madd_n0006_cy<2>
+    SLICE_X18Y4.CLK      Tas                   0.289   test_led/PWM<4>
+                                                       test_led/Madd_n0006_cy<3>11
+                                                       test_led/PWM_4
+    -------------------------------------------------  ---------------------------
+    Total                                      1.430ns (0.939ns logic, 0.491ns route)
+                                                       (65.7% logic, 34.3% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     8.611ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               test_led/PWM_2 (FF)
+  Destination:          test_led/PWM_4 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      1.347ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.007ns (0.149 - 0.156)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: test_led/PWM_2 to test_led/PWM_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X18Y5.BQ       Tcko                  0.447   test_led/PWM<3>
+                                                       test_led/PWM_2
+    SLICE_X18Y4.D6       net (fanout=2)        0.285   test_led/PWM<2>
+    SLICE_X18Y4.D        Tilo                  0.203   test_led/PWM<4>
+                                                       test_led/Madd_n0006_cy<2>11
+    SLICE_X18Y4.C6       net (fanout=2)        0.123   test_led/Madd_n0006_cy<2>
+    SLICE_X18Y4.CLK      Tas                   0.289   test_led/PWM<4>
+                                                       test_led/Madd_n0006_cy<3>11
+                                                       test_led/PWM_4
+    -------------------------------------------------  ---------------------------
+    Total                                      1.347ns (0.939ns logic, 0.408ns route)
+                                                       (69.7% logic, 30.3% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point test_led/PWM_4 (SLICE_X18Y4.C5), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     8.703ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               test_led/PWM_3 (FF)
+  Destination:          test_led/PWM_4 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      1.255ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.007ns (0.149 - 0.156)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: test_led/PWM_3 to test_led/PWM_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X18Y5.CQ       Tcko                  0.447   test_led/PWM<3>
+                                                       test_led/PWM_3
+    SLICE_X18Y4.C5       net (fanout=2)        0.519   test_led/PWM<3>
+    SLICE_X18Y4.CLK      Tas                   0.289   test_led/PWM<4>
+                                                       test_led/Madd_n0006_cy<3>11
+                                                       test_led/PWM_4
+    -------------------------------------------------  ---------------------------
+    Total                                      1.255ns (0.736ns logic, 0.519ns route)
+                                                       (58.6% logic, 41.4% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point test_led/PWM_2 (SLICE_X18Y5.B5), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.494ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               test_led/PWM_2 (FF)
+  Destination:          test_led/PWM_2 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.494ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 10.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: test_led/PWM_2 to test_led/PWM_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X18Y5.BQ       Tcko                  0.234   test_led/PWM<3>
+                                                       test_led/PWM_2
+    SLICE_X18Y5.B5       net (fanout=2)        0.063   test_led/PWM<2>
+    SLICE_X18Y5.CLK      Tah         (-Th)    -0.197   test_led/PWM<3>
+                                                       test_led/Madd_n0006_xor<2>11
+                                                       test_led/PWM_2
+    -------------------------------------------------  ---------------------------
+    Total                                      0.494ns (0.431ns logic, 0.063ns route)
+                                                       (87.2% logic, 12.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point test_led/PWM_3 (SLICE_X18Y5.C5), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.494ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               test_led/PWM_3 (FF)
+  Destination:          test_led/PWM_3 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.494ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 10.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: test_led/PWM_3 to test_led/PWM_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X18Y5.CQ       Tcko                  0.234   test_led/PWM<3>
+                                                       test_led/PWM_3
+    SLICE_X18Y5.C5       net (fanout=2)        0.063   test_led/PWM<3>
+    SLICE_X18Y5.CLK      Tah         (-Th)    -0.197   test_led/PWM<3>
+                                                       test_led/Madd_n0006_xor<3>11
+                                                       test_led/PWM_3
+    -------------------------------------------------  ---------------------------
+    Total                                      0.494ns (0.431ns logic, 0.063ns route)
+                                                       (87.2% logic, 12.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point test_led/PWM_1 (SLICE_X18Y5.A5), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.574ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               test_led/PWM_0 (FF)
+  Destination:          test_led/PWM_1 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.574ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 10.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: test_led/PWM_0 to test_led/PWM_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X18Y5.AQ       Tcko                  0.234   test_led/PWM<3>
+                                                       test_led/PWM_0
+    SLICE_X18Y5.A5       net (fanout=3)        0.209   test_led/PWM<0>
+    SLICE_X18Y5.CLK      Tah         (-Th)    -0.131   test_led/PWM<3>
+                                                       test_led/Madd_n0006_xor<1>11
+                                                       test_led/PWM_1
+    -------------------------------------------------  ---------------------------
+    Total                                      0.574ns (0.365ns logic, 0.209ns route)
+                                                       (63.6% logic, 36.4% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 8.270ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 1.730ns (578.035MHz) (Tbcper_I)
+  Physical resource: clk_BUFGP/BUFG/I0
+  Logical resource: clk_BUFGP/BUFG/I0
+  Location pin: BUFGMUX_X3Y13.I0
+  Clock network: clk_BUFGP/IBUFG
+--------------------------------------------------------------------------------
+Slack: 9.595ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 0.405ns (2469.136MHz) (Tcp)
+  Physical resource: test_led/PWM<4>/CLK
+  Logical resource: test_led/PWM_4/CK
+  Location pin: SLICE_X18Y4.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 9.595ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 0.405ns (2469.136MHz) (Tcp)
+  Physical resource: test_led/PWM<3>/CLK
+  Logical resource: test_led/PWM_1/CK
+  Location pin: SLICE_X18Y5.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    1.961|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 14 paths, 0 nets, and 15 connections
+
+Design statistics:
+   Minimum period:   1.961ns{1}   (Maximum frequency: 509.944MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Thu Aug 25 06:31:46 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 183 MB
+
+
+
